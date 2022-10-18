@@ -1,0 +1,101 @@
+.cabecera{
+    display: flex;
+    padding: 1.5rem 1rem;
+    height: 72px;
+    align-items: center;
+}
+.cabecera--contenedor{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecera__logo--caja{
+    display: flex;
+    align-items: center;
+    width: 409px;
+    height: 40px;
+    justify-content: space-between;
+}
+.cabecera__logo--caja div{
+    display: flex;
+    align-items: center;
+}
+.cabecera__logo--caja__imagen{
+    background: url("../img/logo.png") no-repeat center / cover;
+    width: 22.74px;
+    height: 16.33px;
+    margin-right: 0.2rem;
+}
+.cabecera__logo--caja__titulo{
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 10px;
+}
+.cabecera__logo--caja__titulo:nth-child(even){
+    color: var(--color-2do)
+}
+.cabecera__buscador{
+    display: none;
+    width: 272px;
+    height: 40px;
+    border-radius: 20px;
+    background: var(--color-1er-fondo);
+}
+.cabecera__buscador__input{
+    border:none;
+    outline: none;
+    padding: 0;
+    width: 70%;
+}
+.cabecera__buscador__input::placeholder{
+    background:var(--color-1er-fondo);
+}
+.cabecera__buscador__input:focus {
+    outline: none;
+    background:var(--color-1er-fondo);
+}
+.cabecera__buscador__input:before {
+    outline: none;
+    background:var(--color-1er-fondo);
+}
+.cabecera__buscador__label{
+    background: url("../img/lupa.png") no-repeat center / cover;
+    width: 17px;
+    height: 17px;
+}
+
+.cabecera__boton--login{
+    border:1px solid var(--color-2do);
+    color: var(--color-2do);
+    padding: 0.5rem;
+    width: 133px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+.cabecera__boton--buscar{
+    background: url("../img/lupa.png") no-repeat center / cover;
+    width: 17px;
+    height: 17px;
+}
+
+/*?----------------- MediaQuery  */
+
+@media screen and (min-width:768px){
+    .cabecera__buscador form{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .cabecera__boton--buscar{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:922px){
+
+}

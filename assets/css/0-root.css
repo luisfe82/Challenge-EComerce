@@ -1,0 +1,33 @@
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --color-principal:#FFFFFF; 
+   --color-1er-fondo: #F5F5F5;
+   --color-2do-fondo:#E5E5E5;
+   --color-3er-fondo:#EAF2FD;
+   --color-link: #000;
+   --color-1er:#464646;
+   --color-2do: #2A7AE4;
+   --tipografia-1er:'Raleway';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-principal) ;
+    font-family:var(--tipografia-1er);
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color-de-link);
+}
