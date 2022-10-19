@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./assets/css/3-starwars.css">
     <link rel="stylesheet" href="./assets/css/4-consolas.css">
     <link rel="stylesheet" href="./assets/css/5-diversos.css">
+    <link rel="stylesheet" href="./assets/css/6-contacto.css">
+    <link rel="stylesheet" href="./assets/css/7-contacto-form.css">
 
 </head>
 <body>
@@ -243,6 +245,43 @@
                 </div>
                 
             </div>
+        </section>
+
+        <section class="contacto">
+            <div class="contacto--contenedor">
+                <div class="contacto__logo--caja">
+                    <div class="contacto__logo--caja__imagen"></div>
+                    <div class="contacto__logo--caja__titulo">Alura</div>
+                    <div class="contacto__logo--caja__titulo">Geek</div>
+                </div>
+                <div class="contacto__link--caja">
+                    <a href="#" class="contacto__link--caja__link" href="">Quienes somos</a>
+                    <a href="#" class="contacto__link--caja__link" href="">Política de privacidad</a>
+                    <a href="#" class="contacto__link--caja__link" href="">Programa de fidelidad</a>
+                    <a href="#" class="contacto__link--caja__link" href="">Nuestras tiendas</a>
+                    <a href="#" class="contacto__link--caja__link" href="">Quiero ser franquiciado</a>
+                    <a href="#" class="contacto__link--caja__link" href="">Anúncie aquí</a>
+                </div>
+            </div>
+
+            <div class="fcontacto__caja">
+                <h2 class="fcontacto__caja__titulo">Contacto</h2>
+                <form class="fcontacto__form" name="form">
+                    <div class="fcontacto__form__input-container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required
+                            data-tipo="nombre">
+                        <label class="input-label" for="name">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>                                           
+                    <div class="fcontacto__form__textarea-container">
+                        <textarea name="mensaje" id="mensaje" class="textarea" type="text" placeholder="Mensaje" cols="35" rows="3" required data-tipo="mensaje" minlegth="4" maxlength="500" required ></textarea>
+                        <label class="textarea-label" for="mensaje">Mensaje</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>   
+                    <button class="fcontacto__form__boton"  type="submit" >Enviar mensaje</button>
+                </form>
+            </div>
+
         </section>
 
     </main>
