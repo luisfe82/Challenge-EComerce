@@ -143,7 +143,7 @@
     .contacto--contenedor{
         width: 233px;        
     }
-    .contacto__logo--caja {
+    .contacto__logo--caja a{
         justify-content: flex-start;
     }
     .contacto__link--caja {

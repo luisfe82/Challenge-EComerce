@@ -15,7 +15,7 @@
     padding-left: 2rem;
     width:100%;    
 }
-.cabecera__logo--caja{
+.cabecera__logo--caja a{
     display: flex;
     align-items: center;
 }
