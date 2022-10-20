@@ -1,0 +1,46 @@
+.login{
+    background: var(--color-2do-fondo);
+    height: 362px;
+    display: flex;
+    align-items: center;
+}
+.login__caja{
+    padding: 0 1rem;
+    width: 100%;
+    text-align: center;
+}
+.login__caja__titulo{
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 1rem;
+}
+
+.login__form__boton{
+    padding: 1rem 1rem;
+    background: #2A7AE4;
+    color:#ffffff;
+    border:none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    height: 50px;
+}
+
+@media screen and (min-width:768px){
+    .login__caja{
+        padding: 0 10.40625rem;
+    }
+}
+@media screen and (min-width:992px){
+    .login__caja__titulo{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .login__caja{
+        padding: 0 22.78125rem;
+    }
+}
