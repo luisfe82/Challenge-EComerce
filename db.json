@@ -1,0 +1,12 @@
+{
+    "perfil": [
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"StarWars",
+        "url":"cabeza-soldado.png",
+        "nombre":"Soldado",
+        "precio":"$120.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      }     
+    ]
+  }
