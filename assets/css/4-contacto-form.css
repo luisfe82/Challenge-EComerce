@@ -1,3 +1,44 @@
+.contacto{
+    background: var(--color-3er-fondo);
+    padding: 1rem;
+}
+.contacto__logo--caja a{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    justify-content: center;
+}
+.contacto__logo--caja__imagen{
+    background: url("../img/logo.png") no-repeat center / cover;
+    width: 40px;
+    height: 29px;
+    margin-right: 0.2rem;
+}
+.contacto__logo--caja__titulo{
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 16px;
+}
+.contacto__logo--caja__titulo:nth-child(even){
+    color: var(--color-2do)
+}
+.contacto__link--caja{
+    display: flex;
+    padding: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto__link--caja__link{
+    padding-bottom: 1rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all 0.5s;
+}
+.contacto__link--caja__link:hover{
+    font-weight: 700;
+    font-size: 25px;
+}
 .fcontacto__caja {
     width: 100%;
 }

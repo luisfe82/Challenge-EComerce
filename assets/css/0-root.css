@@ -1,3 +1,6 @@
+@import url(_normalize.css);
+@import url(_reset.css);
+
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/

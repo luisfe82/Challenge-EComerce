@@ -1,89 +1,89 @@
-.consolas{
+.content{
     padding: 1rem;
 }
-.consolas--cabecera{
+.content--cabecera{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1rem;
 }
-.consolas--cabecera__titulo{
+.content--cabecera__titulo{
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
 }
-.consolas--cabecera__link{
+.content--cabecera__link{
     color: var(--color-2do);
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     width:75px;    
 }
-.consolas--cabecera__link--imagen{
+.content--cabecera__link--imagen{
     width: 12px;
     height: 12px;
 }
-.consolas--body{
+.content--body{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
-.consolas--body__caja{
+.content--body__caja{
     width: 148px;
 }
-.consolas--body__caja__imagen img{
+.content--body__caja__imagen img{
     height: 174px;
     width: 148px;
 }
-.consolas--body__caja:nth-child(5){
+.content--body__caja:nth-child(5){
     display: none;
 }
-.consolas--body__caja:nth-child(6){
+.content--body__caja:nth-child(6){
     display: none;
 }
-.consolas--body__caja__titulo{
+.content--body__caja__titulo{
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     padding-top: 0.5rem;
 }
-.consolas--body__caja__texto{
+.content--body__caja__texto{
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     padding-top: 0.5rem;
 }
-.consolas--body__caja__link{
+.content--body__caja__link{
     color: var(--color-2do);
     font-weight: 700;
     font-size: 14px;
     line-height: 26px;
 }
 @media screen and (min-width:768px){
-    .consolas{
+    .content{
         padding: 2rem;
     }
-    .consolas--body__caja{
+    .content--body__caja{
         width: 160.5px;
     }
-    .consolas--body__caja__imagen img{
+    .content--body__caja__imagen img{
         width: 100%;
     }
 }
 @media screen and (min-width:992px){
-    .consolas{
+    .content{
         padding: 2rem 9.5rem;
     }
-    .consolas--body__caja{
+    .content--body__caja{
         width: 161.6px;
     }
-    .consolas--body__caja__imagen img{
+    .content--body__caja__imagen img{
         width: 100%;
     }
-    .consolas--body__caja:nth-child(5){
+    .content--body__caja:nth-child(5){
         display: block;
     }
-    .consolas--body__caja:nth-child(6){
+    .content--body__caja:nth-child(6){
         display: block;
     }
 }

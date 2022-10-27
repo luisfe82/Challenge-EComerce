@@ -10,19 +10,18 @@
     <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Challenge / EComerce</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon.ico">
 
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/0-root.css">
     <link rel="stylesheet" href="./assets/css/1-cabecera.css">
     <link rel="stylesheet" href="./assets/css/2-presenta.css">
-    <link rel="stylesheet" href="./assets/css/3-starwars.css">
-    <link rel="stylesheet" href="./assets/css/4-consolas.css">
-    <link rel="stylesheet" href="./assets/css/5-diversos.css">
-    <link rel="stylesheet" href="./assets/css/6-contacto.css">
-    <link rel="stylesheet" href="./assets/css/7-contacto-form.css">
-    <link rel="stylesheet" href="./assets/css/8-pie.css">
+    <link rel="stylesheet" href="./assets/css/3-content.css">
+    <link rel="stylesheet" href="./assets/css/4-contacto-form.css">
+    <link rel="stylesheet" href="./assets/css/5-pie.css">
+    <link rel="stylesheet" href="./assets/css/6-login.css">
+    <link rel="stylesheet" href="./assets/css/7-productos.css">
+    <link rel="stylesheet" href="./assets/css/8-nuevo.css">
 
 </head>
 <body>
@@ -58,150 +57,39 @@
             </div>
         </section>
 
-        <section class="starwars">
-            <div class="starwars--cabecera">
-                <h2 class="starwars--cabecera__titulo">Star Wars</h2>
-                <a  class="starwars--cabecera__link" href="productos.html"> Ver todo &nbsp;<img class="starwars--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
+        <section class="content">
+            <div class="content--cabecera">
+                <h2 class="content--cabecera__titulo">Star Wars</h2>
+                <a  class="content--cabecera__link" href="productos.html"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
             </div>
-            <div class="starwars--body" data-producto>
+            <div class="content--body" data-starwars>
 
-                <div class="starwars--body__caja">
-                    <div class="starwars--body__caja__imagen">
-                        <img src="./assets/img/cabeza-soldado.png" alt="">
-                    </div>
-                    <div class="starwars--body__caja__titulo">Producto XYZ</div>
-                    <div class="starwars--body__caja__texto">R$ 60,00</div>
-                    <span><a class="starwars--body__caja__link">Ver producto</a></span>
-                </div>    
+                <!-- .... -->
                 
             </div>
         </section>
 
-        <section class="consolas">
-            <div class="consolas--cabecera">
-                <h2 class="consolas--cabecera__titulo">Consolas</h2>
-                <a  class="consolas--cabecera__link" href="productos.html"> Ver todo &nbsp;<img class="consolas--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
+        <section class="content">
+            <div class="content--cabecera">
+                <h2 class="content--cabecera__titulo">Consolas</h2>
+                <a  class="content--cabecera__link" href="productos.html"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
             </div>
-            <div class="consolas--body">
+            <div class="content--body" data-consolas>
 
-                <div class="consolas--body__caja">
-                    <div class="consolas--body__caja__imagen">
-                        <img src="./assets/img/control-xbox-one.png" alt="">
-                    </div>
-                    <div class="consolas--body__caja__titulo">Producto XYZ</div>
-                    <div class="consolas--body__caja__texto">R$ 60,00</div>
-                    <span><a class="consolas--body__caja__link">Ver producto</a></span>
-                </div>
-
-                <div class="consolas--body__caja">
-                    <div class="consolas--body__caja__imagen">
-                        <img src="./assets/img/play-station.png" alt="">
-                    </div>
-                    <div class="consolas--body__caja__titulo">Producto XYZ</div>
-                    <div class="consolas--body__caja__texto">R$ 60,00</div>
-                    <span><a class="consolas--body__caja__link">Ver producto</a></span>
-                </div>
-
-                <div class="consolas--body__caja">
-                    <div class="consolas--body__caja__imagen">
-                        <img src="./assets/img/nintendo.png" alt="">
-                    </div>
-                    <div class="consolas--body__caja__titulo">Producto XYZ</div>
-                    <div class="consolas--body__caja__texto">R$ 60,00</div>
-                    <span><a class="consolas--body__caja__link">Ver producto</a></span>
-                </div>
-
-                <div class="consolas--body__caja">
-                    <div class="consolas--body__caja__imagen">
-                        <img src="./assets/img/control-twich.png" alt="">
-                    </div>
-                    <div class="consolas--body__caja__titulo">Producto XYZ</div>
-                    <div class="consolas--body__caja__texto">R$ 60,00</div>
-                    <span><a class="consolas--body__caja__link">Ver producto</a></span>
-                </div>
-
-                <div class="consolas--body__caja">
-                    <div class="consolas--body__caja__imagen">
-                        <img src="./assets/img/xbox-one-x.png" alt="">
-                    </div>
-                    <div class="consolas--body__caja__titulo">Producto XYZ</div>
-                    <div class="consolas--body__caja__texto">R$ 60,00</div>
-                    <span><a class="consolas--body__caja__link">Ver producto</a></span>
-                </div>
-
-                <div class="consolas--body__caja">
-                    <div class="consolas--body__caja__imagen">
-                        <img src="./assets/img/juego-atari.png" alt="">
-                    </div>
-                    <div class="consolas--body__caja__titulo">Producto XYZ</div>
-                    <div class="consolas--body__caja__texto">R$ 60,00</div>
-                    <span><a class="consolas--body__caja__link">Ver producto</a></span>
-                </div>
+                <!-- .... -->
                 
             </div>
         </section>
 
-        <section class="diversos">
-            <div class="diversos--cabecera">
-                <h2 class="diversos--cabecera__titulo">Diversos</h2>
-                <a  class="diversos--cabecera__link" href="productos.html"> Ver todo &nbsp;<img class="diversos--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
+        <section class="content">
+            <div class="content--cabecera">
+                <h2 class="content--cabecera__titulo">Diversos</h2>
+                <a  class="content--cabecera__link" href="productos.html"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
             </div>
-            <div class="diversos--body">
+            <div class="content--body" data-diversos>
 
-                <div class="diversos--body__caja">
-                    <div class="diversos--body__caja__imagen">
-                        <img src="./assets/img/logo-consola.png" alt="">
-                    </div>
-                    <div class="diversos--body__caja__titulo">Producto XYZ</div>
-                    <div class="diversos--body__caja__texto">R$ 60,00</div>
-                    <span><a class="diversos--body__caja__link">Ver producto</a></span>
-                </div>
+                <!-- .... -->  
 
-                <div class="diversos--body__caja">
-                    <div class="diversos--body__caja__imagen">
-                        <img src="./assets/img/control.png" alt="">
-                    </div>
-                    <div class="diversos--body__caja__titulo">Producto XYZ</div>
-                    <div class="diversos--body__caja__texto">R$ 60,00</div>
-                    <span><a class="diversos--body__caja__link">Ver producto</a></span>
-                </div>
-
-                <div class="diversos--body__caja">
-                    <div class="diversos--body__caja__imagen">
-                        <img src="./assets/img/juguete-sonic.png" alt="">
-                    </div>
-                    <div class="diversos--body__caja__titulo">Producto XYZ</div>
-                    <div class="diversos--body__caja__texto">R$ 60,00</div>
-                    <span><a class="diversos--body__caja__link">Ver producto</a></span>
-                </div>
-
-                <div class="diversos--body__caja">
-                    <div class="diversos--body__caja__imagen">
-                        <img src="./assets/img/consola-vieja.png" alt="">
-                    </div>
-                    <div class="diversos--body__caja__titulo">Producto XYZ</div>
-                    <div class="diversos--body__caja__texto">R$ 60,00</div>
-                    <span><a class="diversos--body__caja__link">Ver producto</a></span>
-                </div>
-
-                <div class="diversos--body__caja">
-                    <div class="diversos--body__caja__imagen">
-                        <img src="./assets/img/jugador.png" alt="">
-                    </div>
-                    <div class="diversos--body__caja__titulo">Producto XYZ</div>
-                    <div class="diversos--body__caja__texto">R$ 60,00</div>
-                    <span><a class="diversos--body__caja__link">Ver producto</a></span>
-                </div>
-
-                <div class="diversos--body__caja">
-                    <div class="diversos--body__caja__imagen">
-                        <img src="./assets/img/pokemon-juguete.png" alt="">
-                    </div>
-                    <div class="diversos--body__caja__titulo">Producto XYZ</div>
-                    <div class="diversos--body__caja__texto">R$ 60,00</div>
-                    <span><a class="diversos--body__caja__link">Ver producto</a></span>
-                </div>
-                
             </div>
         </section>
 
@@ -254,7 +142,9 @@
         </div>
     </footer>
 
-    <script type="module" src="./controllers/product.services.js"></script>
+    <!-- Script del documento JavaScript -->
+    <script src="./assets/js/app.js" type="module"></script>
+    <script src="./controllers/producto.controller.js" type="module"></script>
 
 </body>
 </html>

@@ -1,11 +1,147 @@
 {
-    "perfil": [
+    "almacen": [
       {
         "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
-        "categoria":"StarWars",
+        "categoria":"starwars",
         "url":"cabeza-soldado.png",
-        "nombre":"Soldado",
+        "nombre":"Cabeza Soldado",
         "precio":"$120.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },    
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"starwars",
+        "url":"cabeza-dark.png",
+        "nombre":"Cabeza Dark",
+        "precio":"$60.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },    
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"starwars",
+        "url":"juguete-jedai.png",
+        "nombre":"Juguete Jedai",
+        "precio":"$60.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },    
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"starwars",
+        "url":"soldado-juguete.png",
+        "nombre":"Soldado Juguete",
+        "precio":"$150.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"starwars",
+        "url":"jedai-juguete.png",
+        "nombre":"Jedai Juguete",
+        "precio":"$250.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"starwars",
+        "url":"dark-juguete.png",
+        "nombre":"Dark Juguete",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"consolas",
+        "url":"control-xbox-one.png",
+        "nombre":"Control Xbox One",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"consolas",
+        "url":"play-station.png",
+        "nombre":"Play Station",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"consolas",
+        "url":"nintendo.png",
+        "nombre":"Nintendo",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"consolas",
+        "url":"control-twich.png",
+        "nombre":"Control Twich",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"consolas",
+        "url":"xbox-one-x.png",
+        "nombre":"Xbox One X",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"consolas",
+        "url":"juego-atari.png",
+        "nombre":"Juego Atari",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"diversos",
+        "url":"logo-consola.png",
+        "nombre":"Logo Consola",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"diversos",
+        "url":"control.png",
+        "nombre":"Control",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"diversos",
+        "url":"juguete-sonic.png",
+        "nombre":"Juguete Sonic",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"diversos",
+        "url":"consola-vieja.png",
+        "nombre":"Consola Vieja",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"diversos",
+        "url":"jugador.png",
+        "nombre":"Jugador",
+        "precio":"$90.00",
+        "descripcion":"Juguete representativo a StarWars"        
+      },     
+      {
+        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+        "categoria":"diversos",
+        "url":"pokemon-juguete.png",
+        "nombre":"Pokemon Juguete",
+        "precio":"$90.00",
         "descripcion":"Juguete representativo a StarWars"        
       }     
     ]
