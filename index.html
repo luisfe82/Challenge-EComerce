@@ -53,14 +53,14 @@
             <div class="presenta--caja">
                 <h1 class="presenta--caja__titulo">Febrero Promocional</h1>
                 <h2 class="presenta--caja__texto">Productos selecionados con 33% de descuento</h2>
-                <button class="presenta--caja__boton">Ver Consolas</button>
+                <a href="./categoria.html?id=2"><button class="presenta--caja__boton">Ver Consolas</button></a>
             </div>
         </section>
 
         <section class="content">
             <div class="content--cabecera">
                 <h2 class="content--cabecera__titulo">Star Wars</h2>
-                <a  class="content--cabecera__link" href="productos.html"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
+                <a  class="content--cabecera__link" href="./categoria.html?id=1"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
             </div>
             <div class="content--body" data-starwars>
 
@@ -72,7 +72,7 @@
         <section class="content">
             <div class="content--cabecera">
                 <h2 class="content--cabecera__titulo">Consolas</h2>
-                <a  class="content--cabecera__link" href="productos.html"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
+                <a  class="content--cabecera__link" href="./categoria.html?id=2"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
             </div>
             <div class="content--body" data-consolas>
 
@@ -84,7 +84,7 @@
         <section class="content">
             <div class="content--cabecera">
                 <h2 class="content--cabecera__titulo">Diversos</h2>
-                <a  class="content--cabecera__link" href="productos.html"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
+                <a  class="content--cabecera__link" href="./categoria.html?id=3"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
             </div>
             <div class="content--body" data-diversos>
 
@@ -144,7 +144,9 @@
 
     <!-- Script del documento JavaScript -->
     <script src="./assets/js/app.js" type="module"></script>
-    <script src="./controllers/producto.controller.js" type="module"></script>
+    <script src="./controllers/starwars.js" type="module"></script>
+    <script src="./controllers/consolas.js" type="module"></script>
+    <script src="./controllers/diversos.js" type="module"></script>
 
 </body>
 </html>

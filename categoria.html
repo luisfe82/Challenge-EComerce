@@ -10,17 +10,18 @@
     <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Challenge / EComerce</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon.ico">
 
-     <!-- Referencia de la hoja de estilo de Css -->
-     <link rel="stylesheet" href="./assets/css/0-root.css">
-     <link rel="stylesheet" href="./assets/css/1-cabecera.css">
-     <link rel="stylesheet" href="./assets/css/2-presenta.css">
-     <link rel="stylesheet" href="./assets/css/3-content.css">
-     <link rel="stylesheet" href="./assets/css/4-contacto-form.css">
-     <link rel="stylesheet" href="./assets/css/5-pie.css">
-     <link rel="stylesheet" href="./assets/css/6-login.css">
-     <link rel="stylesheet" href="./assets/css/7-productos.css">
-     <link rel="stylesheet" href="./assets/css/8-nuevo.css">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="./assets/css/0-root.css">
+    <link rel="stylesheet" href="./assets/css/1-cabecera.css">
+    <link rel="stylesheet" href="./assets/css/2-presenta.css">
+    <link rel="stylesheet" href="./assets/css/3-content.css">
+    <link rel="stylesheet" href="./assets/css/4-contacto-form.css">
+    <link rel="stylesheet" href="./assets/css/5-pie.css">
+    <link rel="stylesheet" href="./assets/css/6-login.css">
+    <link rel="stylesheet" href="./assets/css/7-productos.css">
+    <link rel="stylesheet" href="./assets/css/8-nuevo.css">
 
 </head>
 <body>
@@ -40,39 +41,30 @@
                     <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador" placeholder="¿Qué deseas buscar?"> 
                     <div class="cabecera__buscador--caja__label" for="buscador"></div>
                 </div>
-            </div>                     
+            </div>   
+            <button class="cabecera__boton--login" ><a href="login.html"> Login</a></button>                    
             <div class="cabecera__boton--buscar"></div>
         </div>
     </header>
 
     <main>
 
-        <section class="login">
-            <div class="login__caja">
-                <h2 class="login__caja__titulo">Iniciar Sección</h2>
-                <form class="login__form" name="form">
-
-                    <div class="fcontacto__form__input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Email" required
-                            data-tipo="email">
-                        <label class="input-label" for="email">Escriba su correo electrónico</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>     
-
-                    <div class="fcontacto__form__input-container">
-                        <input name="password" id="password" class="input" type="password" placeholder="Password" required
-                            data-tipo="password">
-                        <label class="input-label" for="password">Escriba su contraseña</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>                                           
-                     
-                    <button class="login__form__boton"  type="submit" >E n t r a r</button>
-
-                </form>
+        <section class="presenta" data-presenta>
+            <div class="presenta--caja">
+                <h1 class="presenta--caja__titulo" data-titulo></h1>
             </div>
         </section>
 
-        
+        <section class="content" data-content>
+            <div class="content--body" data-contenido>
+
+                <!-- .... -->
+                
+            </div>
+        </section>
+
+
+
 
         <section class="contacto">
             <div class="contacto--contenedor">
@@ -103,7 +95,7 @@
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>                                           
                     <div class="fcontacto__form__textarea-container">
-                        <textarea name="mensaje" id="mensaje" class="textarea" type="text" placeholder="Mensaje" cols="35" rows="3" required data-tipo="mensaje" minlegth="4" maxlength="500"></textarea>
+                        <textarea name="mensaje" id="mensaje" class="textarea" type="text" placeholder="Mensaje" cols="35" rows="3" required data-tipo="mensaje" minlegth="4" maxlength="500" required ></textarea>
                         <label class="textarea-label" for="mensaje">Mensaje</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>   
@@ -124,7 +116,9 @@
     </footer>
 
     <!-- Script del documento JavaScript -->
-    <script src="./assets/js/app.js" type="module"></script>
+    <script src="./assets/js/app.js" type="module"></script>   
+    <script src="./controllers/detalle.categoria.js" type="module"></script>   
+
 
 </body>
 </html>
