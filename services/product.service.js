@@ -8,7 +8,13 @@ const detalleCatego = async (id) => {
   return await respuesta.json();
 };
 
+const detalleProdu = async (id) => {
+  const respuesta = await fetch(`http://localhost:3000/almacen/${id}`);
+  return await respuesta.json();
+};
+
 export const productoServices = {
   ListaProductos,
   detalleCatego,
+  detalleProdu,
 }
