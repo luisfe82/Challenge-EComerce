@@ -6,7 +6,7 @@ const consolas = document.querySelector("[data-consolas]");
 
 productoServices.ListaProductos().then((data) => {
     data.forEach((almacen) => {
-        const nuevaLinea = lineaNuevaProducto(almacen.url, almacen.nombre, almacen.precio,"content");
+        const nuevaLinea = lineaNuevaProducto(almacen.id,almacen.url, almacen.nombre, almacen.precio,"content");
         if (almacen.categoria == "Consolas") {
             consolas.appendChild(nuevaLinea);
         }
