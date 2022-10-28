@@ -1,0 +1,15 @@
+.detalleProducto--caja{
+    padding: 1rem;
+}
+
+.detalleProducto__descripcion{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: justify;
+    padding: 1rem 0;
+}
+
+.detalleProducto__imagen img{
+    width: 100%;
+}

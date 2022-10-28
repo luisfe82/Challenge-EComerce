@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
@@ -15,7 +16,7 @@
     <!-- Referencia de la hoja de estilo de Css -->
     <link rel="stylesheet" href="./assets/css/0-root.css">
     <link rel="stylesheet" href="./assets/css/1-cabecera.css">
-    <link rel="stylesheet" href="./assets/css/2.1-presenta.css">
+    <link rel="stylesheet" href="./assets/css/2-presenta.css">
     <link rel="stylesheet" href="./assets/css/3-content.css">
     <link rel="stylesheet" href="./assets/css/4-contacto-form.css">
     <link rel="stylesheet" href="./assets/css/5-pie.css">
@@ -23,8 +24,10 @@
     <link rel="stylesheet" href="./assets/css/7-productos.css">
     <link rel="stylesheet" href="./assets/css/8-nuevo.css">
     <link rel="stylesheet" href="./assets/css/9-categoria.css">
+    <link rel="stylesheet" href="./assets/css/10-detalle.producto.css">
 
 </head>
+
 <body>
 
     <!-- Cabecera -->
@@ -39,33 +42,41 @@
             </div>
             <div class="cabecera--caja">
                 <div class="cabecera__buscador--caja">
-                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador" placeholder="¿Qué deseas buscar?"> 
+                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador"
+                        placeholder="¿Qué deseas buscar?">
                     <div class="cabecera__buscador--caja__label" for="buscador"></div>
                 </div>
-            </div>   
-            <button class="cabecera__boton--login" ><a href="login.html"> Login</a></button>                    
+            </div>
+            <button class="cabecera__boton--login"><a href="login.html"> Login</a></button>
             <div class="cabecera__boton--buscar"></div>
         </div>
     </header>
 
     <main>
 
-        <section class="presentaCat" data-presenta>
-            <div class="presentaCat--caja">
-                <h1 class="presentaCat--caja__titulo" data-titulo></h1>
+        <section>
+            <div class="detalleProducto--caja">
+                <div class="detalleProducto__descripcion">
+                    Tablet Samsung Galaxy Tab A7 Lite with Book Cover SM-T220 8.7" 32GB plateada y 3GB de memoria RAM
+                </div>
+                <div class="detalleProducto__imagen">
+                    <img src="./assets/img/cabeza-dark.png" alt="">
+                </div>
+                <div>
+                    <p>R$ 120.20</p>  
+                    <p>en 12 x 208.25 pesos sin interés</p> 
+                    <p>IVA incluido</p>
+                </div>
+                <div>
+                    <p>Oferta del Dia</p>
+                    <p>10% OFF con Citibanamex</p>
+                    <p>Stock Disponible : 10 pzas</p>
+                    <p>Cantidad : 1</p>
+                    <button>Comprar Ahora</button>
+                    <button>Agregar al carrito</button>
+                </div>
             </div>
         </section>
-
-        <section class="categoria">
-            <div class="categoria--body" data-contenido>
-
-                <!-- .... -->
-                
-            </div>
-        </section>
-
-
-
 
         <section class="contacto">
             <div class="contacto--contenedor">
@@ -94,13 +105,15 @@
                             data-tipo="nombre">
                         <label class="input-label" for="name">Nombre</label>
                         <span class="input-message-error">Este campo no es valido</span>
-                    </div>                                           
+                    </div>
                     <div class="fcontacto__form__textarea-container">
-                        <textarea name="mensaje" id="mensaje" class="textarea" type="text" placeholder="Mensaje" cols="35" rows="3" required data-tipo="mensaje" minlegth="4" maxlength="500" required ></textarea>
+                        <textarea name="mensaje" id="mensaje" class="textarea" type="text" placeholder="Mensaje"
+                            cols="35" rows="3" required data-tipo="mensaje" minlegth="4" maxlength="500"
+                            required></textarea>
                         <label class="textarea-label" for="mensaje">Mensaje</label>
                         <span class="input-message-error">Este campo no es valido</span>
-                    </div>   
-                    <button class="fcontacto__form__boton"  type="submit" >Enviar mensaje</button>
+                    </div>
+                    <button class="fcontacto__form__boton" type="submit">Enviar mensaje</button>
                 </form>
             </div>
 
@@ -117,9 +130,8 @@
     </footer>
 
     <!-- Script del documento JavaScript -->
-    <script src="./assets/js/app.js" type="module"></script>   
-    <script src="./controllers/detalle.categoria.js" type="module"></script>   
-
+    <script src="./assets/js/app.js" type="module"></script>
 
 </body>
+
 </html>

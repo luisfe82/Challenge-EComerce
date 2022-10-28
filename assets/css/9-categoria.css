@@ -1,89 +1,77 @@
-.content{
+.categoria{
     padding: 1rem;
 }
-.content--cabecera{
+.categoria--cabecera{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1rem;
 }
-.content--cabecera__titulo{
+.categoria--cabecera__titulo{
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
 }
-.content--cabecera__link{
+.categoria--cabecera__link{
     color: var(--color-2do);
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     width:75px;    
 }
-.content--cabecera__link--imagen{
+.categoria--cabecera__link--imagen{
     width: 12px;
     height: 12px;
 }
-.content--body{
+.categoria--body{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
-.content--body__caja{
+.categoria--body__caja{
     width: 148px;
 }
-.content--body__caja__imagen img{
+.categoria--body__caja__imagen img{
     height: 174px;
     width: 148px;
 }
-.content--body__caja:nth-child(5){
-    display: none;
-}
-.content--body__caja:nth-child(6){
-    display: none;
-}
-.content--body__caja__titulo{
+.categoria--body__caja__titulo{
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     padding-top: 0.5rem;
 }
-.content--body__caja__texto{
+.categoria--body__caja__texto{
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     padding-top: 0.5rem;
 }
-.content--body__caja__link{
+.categoria--body__caja__link{
     color: var(--color-2do);
     font-weight: 700;
     font-size: 14px;
     line-height: 26px;
 }
 @media screen and (min-width:768px){
-    .content{
+    .categoria{
         padding: 2rem;
     }
-    .content--body__caja{
+    .categoria--body__caja{
         width: 160.5px;
     }
-    .content--body__caja__imagen img{
+    .categoria--body__caja__imagen img{
         width: 100%;
     }
 }
 @media screen and (min-width:992px){
-    .content{
+    .categoria{
         padding: 2rem 9.5rem;
     }
-    .content--body__caja{
+    .categoria--body__caja{
         width: calc(100%/6.5);
     }
-    .content--body__caja__imagen img{
+    .categoria--body__caja__imagen img{
         width: 100%;
-    }
-    .content--body__caja:nth-child(5){
-        display: block;
-    }
-    .content--body__caja:nth-child(6){
-        display: block;
     }
 }

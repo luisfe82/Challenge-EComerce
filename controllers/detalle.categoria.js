@@ -12,8 +12,6 @@ const detalleInfo = () => {
   const tituloPrincipal = document.querySelector("[data-titulo]");
   const imagen = document.querySelector("[data-presenta]");
   
-  tituloPrincipal.style.padding = "0 0 14rem 0";
-  
 
   productoServices.detalleCatego(id).then((categoria) => {
     tituloPrincipal.textContent = categoria.titulo;
@@ -23,7 +21,7 @@ const detalleInfo = () => {
 
     productoServices.ListaProductos().then((data) => {
       data.forEach((almacen) => {
-        const nuevaLinea = lineaNuevaProducto(almacen.url, almacen.nombre, almacen.precio);
+        const nuevaLinea = lineaNuevaProducto(almacen.url, almacen.nombre, almacen.precio,"categoria");
         if (almacen.categoria == categoria.titulo) {
           contenido.appendChild(nuevaLinea);
         }
