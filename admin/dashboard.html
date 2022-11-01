@@ -1,75 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Challenge / EComerce</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon.ico">
 
-     <!-- Referencia de la hoja de estilo de Css -->
-     <link rel="stylesheet" href="./assets/css/0-root.css">
-     <link rel="stylesheet" href="./assets/css/1-cabecera.css">
-     <link rel="stylesheet" href="./assets/css/3-content.css">
-     <link rel="stylesheet" href="./assets/css/4-contacto-form.css">
-     <link rel="stylesheet" href="./assets/css/5-pie.css">
-     <link rel="stylesheet" href="./assets/css/6-login.css">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="../assets/css/0-root.css">
+    <link rel="stylesheet" href="../assets/css/1.1-menu.css">
+    <link rel="stylesheet" href="../assets/css/3-content.css">
+    <link rel="stylesheet" href="../assets/css/4-contacto-form.css">
+    <link rel="stylesheet" href="../assets/css/5-pie.css">
 
 </head>
+
 <body>
 
     <!-- Cabecera -->
     <header class="cabecera">
         <div class="cabecera--contenedor">
             <div class="cabecera__logo--caja">
-                <a href="index.html">
+                <a href="../index.html">
                     <div class="cabecera__logo--caja__imagen"></div>
                     <div class="cabecera__logo--caja__titulo">Alura</div>
                     <div class="cabecera__logo--caja__titulo">Geek</div>
                 </a>
             </div>
-            <div class="cabecera--caja">
-                <div class="cabecera__buscador--caja">
-                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador" placeholder="¿Qué deseas buscar?"> 
-                    <div class="cabecera__buscador--caja__label" for="buscador"></div>
-                </div>
-            </div>                     
-            <div class="cabecera__boton--buscar"></div>
+            <nav class="cabecera__menu responsive">
+                <ul class="cabecera__menu__list-nav">
+                    <li class="cabecera__menu__link"><a href="#">Dashboard</a></li>
+                    <li class="cabecera__menu__link"><a href="#">Productos</a></li>
+                    <li class="cabecera__menu__link"><a href="#">Usuarios</a></li>
+                    <li class="cabecera__menu__link"><a href="#">Cerrar Session</a></li>
+                </ul>
+            </nav>
+            <div class="cabecera__menu--icono">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <div class="cabecera__menu__imagen"></div>
+                </a>                
+            </div>
         </div>
     </header>
 
     <main>
 
-        <section class="login">
-            <div class="login__caja">
-                <h2 class="login__caja__titulo">Iniciar Sección</h2>
-                <form class="login__form" name="form" data-form>
-
-                    <div class="fcontacto__form__input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Email" required
-                            data-tipo="email" data-email>
-                        <label class="input-label" for="email">Escriba su correo electrónico</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>     
-
-                    <div class="fcontacto__form__input-container">
-                        <input name="password" id="password" class="input" type="password" placeholder="Password" required  data-tipo="password" minlegth="8" maxlength="12" data-clave>
-                        <label class="input-label" for="password">Escriba su contraseña</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>                                           
-                     
-                    <button class="login__form__boton"  type="submit" >E n t r a r</button>
-
-                </form>
-            </div>
+        <section class="nuevo">
+            
+            
         </section>
 
-        
+
 
         <section class="contacto">
             <div class="contacto--contenedor">
@@ -98,13 +85,15 @@
                             data-tipo="nombre">
                         <label class="input-label" for="name">Nombre</label>
                         <span class="input-message-error">Este campo no es valido</span>
-                    </div>                                           
+                    </div>
                     <div class="fcontacto__form__textarea-container">
-                        <textarea name="mensaje" id="mensaje" class="textarea" type="text" placeholder="Mensaje" cols="35" rows="3" required data-tipo="mensaje" minlegth="4" maxlength="500"></textarea>
+                        <textarea name="mensaje" id="mensaje" class="textarea" type="text" placeholder="Mensaje"
+                            cols="35" rows="3" required data-tipo="mensaje" minlegth="4" maxlength="500"
+                            required></textarea>
                         <label class="textarea-label" for="mensaje">Mensaje</label>
                         <span class="input-message-error">Este campo no es valido</span>
-                    </div>   
-                    <button class="fcontacto__form__boton"  type="submit" >Enviar mensaje</button>
+                    </div>
+                    <button class="fcontacto__form__boton" type="submit">Enviar mensaje</button>
                 </form>
             </div>
 
@@ -122,8 +111,7 @@
 
     <!-- Script del documento JavaScript -->
     <script src="./assets/js/app.js" type="module"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-    <script src="./controllers/auntentificar.js" type="module"></script>
 
 </body>
+
 </html>
