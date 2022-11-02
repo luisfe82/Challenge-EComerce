@@ -4,6 +4,11 @@
         "nombre":"Administrador",
         "email":"administrador@alura.com",
         "clave":"d033e22ae348aeb5660fc2140aec35850c4da997"
+      },
+      {
+        "nombre":"Luis Fe Ramos",
+        "email":"luisferamos@alura.com",
+        "clave":"b16c86adbf6c15d6e5d4d3852b92939995a5375c"
       }
     ],
     "categoria":[

@@ -8,7 +8,7 @@ formulario.addEventListener("submit", (evento) => {
     var encuentra = false;
     var nombre = "";
     const email = document.querySelector("[data-email]").value;
-    const clave = CryptoJS.SHA1(document.querySelector("[data-clave]").value);
+    const clave = CryptoJS.SHA1(document.querySelector("[data-clave]").value);      
     productoServices.BuscarUsuario().then((data) => {
         data.forEach((usuario) => {
             if (usuario.email == email && usuario.clave == clave) {
