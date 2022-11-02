@@ -1,5 +1,5 @@
 .contenedor-admin{
-    background: aquamarine;
+    background: var(--color-3er-fondo);
 }
 .admin{
     padding: 1rem 1rem;

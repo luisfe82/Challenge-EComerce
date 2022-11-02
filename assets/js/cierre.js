@@ -4,7 +4,13 @@ const cierreSession3 = document.querySelector("[data-cierre3]");
 
 
 function cerrar() {
-    console.log("Cerrar Session");
+    var respuesta = confirm("Estas Seguro que deseas salir del administrador");
+    if (respuesta) {
+        localStorage.clear();
+        window.location.href = "../../index.html";
+    }
+
+    
 }
 
 cierreSession.addEventListener("click", cerrar);
