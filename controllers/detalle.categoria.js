@@ -15,7 +15,7 @@ const detalleInfo = () => {
 
   productoServices.detalleCatego(id).then((categoria) => {
     tituloPrincipal.textContent = categoria.titulo;
-    imagen.style.background = `url("../assets/img/${categoria.imagen}") no-repeat center / cover`;
+    imagen.style.background = `url("./assets/img/${categoria.imagen}") no-repeat center / cover`;
 
     const contenido = document.querySelector("[data-contenido]");
 
