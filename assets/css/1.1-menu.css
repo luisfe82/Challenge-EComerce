@@ -13,8 +13,13 @@
 .cabecera__menu{
     display: none;
 }
-.cabecera__logo--caja{
-
+.cabecera__menu--mostrar{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: rgb(136, 193, 250);
+    left: 0;
 }
 .cabecera__logo--caja a{
     display: flex;
@@ -37,6 +42,13 @@
 
 .cabecera__menu__list-nav{
     display: flex;
+}
+.cabecera__menu__list-nav__mostrar{
+    display: flex;
+    height: 171px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .cabecera__menu--icono{
