@@ -13,6 +13,25 @@ export const lineaNuevaProducto = (id, url, nombre, precio, css) => {
     linea.innerHTML = contenido;
     return linea;
 };
+export const lineaNueva = (id, url, nombre, precio, categoria, css) => {
+    const linea = document.createElement('div');
+    linea.classList.add(`${css}--body__caja`);
+    const contenido =
+        `
+    <div class="${css}--body__caja__imagen">
+        <img src="../assets/img/${url}" alt="">
+    </div>
+    <div class="${css}--body__caja__titulo">${nombre}</div>
+    <div class="${css}--body__caja__texto">${precio}</div>
+    <div class="${css}--body__caja__texto">${categoria}</div>
+    <div  class="${css}--body__box">
+        <span><a href="#" class="${css}--body__caja__link--editar">Editar</a></span>
+        <span><a href="#" class="${css}--body__caja__link--borrar"> Borrar</a></span>
+    </div>
+    `;
+    linea.innerHTML = contenido;
+    return linea;
+};
 
 export const lineaProducto = (idC, categoria, url, nombre, precio, descripcion, stock) => {
     const linea = document.createElement('div');

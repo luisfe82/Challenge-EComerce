@@ -59,6 +59,21 @@
     font-size: 14px;
     line-height: 26px;
 }
+.content--body__caja__link--editar{
+    background: #15ba44;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.5rem;
+}
+.content--body__caja__link--borrar{
+    background: #d74300;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.5rem;
+}
+.content--body__box{
+    margin:1rem 0;
+}
 @media screen and (min-width:768px){
     .content{
         padding: 2rem;

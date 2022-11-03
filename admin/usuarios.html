@@ -11,51 +11,89 @@
     <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Challenge / EComerce</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon.ico">
 
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="./assets/css/0-root.css">
-    <link rel="stylesheet" href="./assets/css/1-cabecera.css">
-    <link rel="stylesheet" href="./assets/css/4-contacto-form.css">
-    <link rel="stylesheet" href="./assets/css/5-pie.css">
-    <link rel="stylesheet" href="./assets/css/10-detalle.producto.css">
+    <link rel="stylesheet" href="../assets/css/0-root.css">
+    <link rel="stylesheet" href="../assets/css/1.1-menu.css">
+    <link rel="stylesheet" href="../assets/css/4-contacto-form.css">
+    <link rel="stylesheet" href="../assets/css/5-pie.css">
+    <link rel="stylesheet" href="../assets/css/11-admin.css">
+    <link rel="stylesheet" href="../assets/css/12-tabla.css">
+
+    <script src="../assets/js/verifica-session.js"></script>
+
 
 </head>
 
 <body>
 
     <!-- Cabecera -->
-    <header class="cabecera">
+    <header class="cabecera contenedor-admin">
         <div class="cabecera--contenedor">
             <div class="cabecera__logo--caja">
-                <a href="index.html">
+                <a data-cierre>
                     <div class="cabecera__logo--caja__imagen"></div>
                     <div class="cabecera__logo--caja__titulo">Alura</div>
                     <div class="cabecera__logo--caja__titulo">Geek</div>
                 </a>
             </div>
-            <div class="cabecera--caja">
-                <div class="cabecera__buscador--caja">
-                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador"
-                        placeholder="¿Qué deseas buscar?">
-                    <div class="cabecera__buscador--caja__label" for="buscador"></div>
-                </div>
+            <nav class="cabecera__menu" data-Menu>
+                <ul class="cabecera__menu__list-nav" data-ul>
+                    <li class="cabecera__menu__link"><a href="./dashboard.html">Dashboard</a></li>
+                    <li class="cabecera__menu__link"><a href="./productos.html">Productos</a></li>
+                    <li class="cabecera__menu__link"><a href="./usuarios.html">Usuarios</a></li>
+                    <li class="cabecera__menu__link"><a data-cierre3>Cerrar Session</a></li>
+                </ul>
+            </nav>
+            <div class="cabecera__menu--icono">
+                <a href="javascript:void(0);" data-btnMenu>
+                    <div class="cabecera__menu__imagen"></div>
+                </a>                
             </div>
-            <button class="cabecera__boton--login"><a href="login.html"> Login</a></button>
-            <div class="cabecera__boton--buscar"></div>
         </div>
     </header>
 
     <main>
 
-        <section data-contenido>
-            <!-- .... -->
+        <section class="admin">
+            <div class="admin-header">
+                <h1 class="admin-titulo">Usuarios</h1>
+                <div class="admin-usuario">
+                    <img src="../assets/img/usuario.png" alt="">
+                    <p><span data-nombres></span> <br> <span data-correos></span></p>
+                </div>
+            </div>
+
+            <div class="admin-body">
+                <div class="tabla-clientes">
+                    <table>
+                        <thead class="btn-agregar">
+                            <tr>
+                                <th class="thead-nombre">Nombre</th>
+                                <th class="thead-email">Email</th>
+                                <th class="thead-opera">
+                                    <a href="">
+                                        Agregar Usuario
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody data-table>
+                            <!-- ... -->
+                        </tbody>
+                    </table> 
+                </div>               
+            </div>
+            
         </section>
+
+
 
         <section class="contacto">
             <div class="contacto--contenedor">
                 <div class="contacto__logo--caja">
-                    <a href="index.html">
+                    <a data-cierre2>
                         <div class="contacto__logo--caja__imagen"></div>
                         <div class="contacto__logo--caja__titulo">Alura</div>
                         <div class="contacto__logo--caja__titulo">Geek</div>
@@ -104,9 +142,10 @@
     </footer>
 
     <!-- Script del documento JavaScript -->
-    <script src="./assets/js/app.js" type="module"></script>
-    <script src="./assets/js/destruye.js"></script>
-    <script src="./controllers/detalle.producto.js" type="module"></script>
+    <script src="../assets/js/app.js" type="module"></script>
+    <script src="../controllers/lista.clientes.js" type="module"></script>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/cierre.js"></script>
 
 </body>
 

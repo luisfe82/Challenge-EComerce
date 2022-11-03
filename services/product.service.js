@@ -1,4 +1,4 @@
-async function ListaProductos() {
+const ListaProductos = async () => {
   const respuesta = await fetch("http://localhost:3000/almacen");
   return await respuesta.json();
 }

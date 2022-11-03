@@ -1,0 +1,26 @@
+.tabla-clientes{
+    border-radius: 41px 41px 41px 41px;
+    -webkit-border-radius: 41px 41px 41px 41px;
+    -moz-border-radius: 41px 41px 41px 41px;
+    background: #e6dbdb;
+    padding: 1rem 1rem;
+    width: 100%;
+}
+th, td{
+    width: 57%;
+    text-align: center;
+}
+.thead-email{
+    display: none;
+    padding-top: 1rem;
+}
+
+@media screen and (min-width:768px){
+    .thead-email{
+        display: block;
+    }
+}
+
+@media screen and (min-width:992px){
+ 
+}

@@ -5,6 +5,15 @@
     padding: 1rem 1rem;
     background: var("--color-secundario");
 }
+.admin-header{
+    margin: 2rem 0;
+}
+.admin-box__link{
+    background: var(--color-2do);
+    color:var(--color-principal);
+    padding: 0.3rem;
+}
+
 .admin-usuario{
     display: flex;
     align-items: center;
