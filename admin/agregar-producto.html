@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Challenge / EComerce</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon.ico">
 
-     <!-- Referencia de la hoja de estilo de Css -->
-     <link rel="stylesheet" href="../assets/css/0-root.css">
-     <link rel="stylesheet" href="../assets/css/1-cabecera.css">
-     <link rel="stylesheet" href="../assets/css/2-presenta.css">
-     <link rel="stylesheet" href="../assets/css/3-content.css">
-     <link rel="stylesheet" href="../assets/css/4-contacto-form.css">
-     <link rel="stylesheet" href="../assets/css/5-pie.css">
-     <link rel="stylesheet" href="../assets/css/6-login.css">
-     <link rel="stylesheet" href="../assets/css/7-productos.css">
-     <link rel="stylesheet" href="../assets/css/8-nuevo.css">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="../assets/css/0-root.css">
+    <link rel="stylesheet" href="../assets/css/1.1-menu.css">
+    <link rel="stylesheet" href="../assets/css/4-contacto-form.css">
+    <link rel="stylesheet" href="../assets/css/5-pie.css">
+    <link rel="stylesheet" href="../assets/css/8-nuevo.css">
+    <link rel="stylesheet" href="../assets/css/11-admin.css">
+    
+
+    <script src="../assets/js/verifica-session.js"></script>
+
 
 </head>
+
 <body>
 
     <!-- Cabecera -->
-    <header class="cabecera">
+    <header class="cabecera contenedor-admin">
         <div class="cabecera--contenedor">
             <div class="cabecera__logo--caja">
-                <a href="../index.html">
+                <a data-cierre>
                     <div class="cabecera__logo--caja__imagen"></div>
                     <div class="cabecera__logo--caja__titulo">Alura</div>
                     <div class="cabecera__logo--caja__titulo">Geek</div>
                 </a>
             </div>
-            <div class="cabecera--caja">
-                <div class="cabecera__buscador--caja">
-                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador" placeholder="¿Qué deseas buscar?"> 
-                    <div class="cabecera__buscador--caja__label" for="buscador"></div>
-                </div>
-            </div>   
-            <button class="nuevo__boton--menu" ><a href="login.html"> Menú Administrador</a></button>                    
-            <div class="cabecera__boton--buscar"></div>
+            <nav class="cabecera__menu" data-Menu>
+                <ul class="cabecera__menu__list-nav" data-ul>
+                    <li class="cabecera__menu__link"><a href="./dashboard.html">Dashboard</a></li>
+                    <li class="cabecera__menu__link"><a href="./productos.html">Productos</a></li>
+                    <li class="cabecera__menu__link"><a href="./usuarios.html">Usuarios</a></li>
+                    <li class="cabecera__menu__link"><a data-cierre3>Cerrar Session</a></li>
+                </ul>
+            </nav>
+            <div class="cabecera__menu--icono">
+                <a href="javascript:void(0);" data-btnMenu>
+                    <div class="cabecera__menu__imagen"></div>
+                </a>                
+            </div>
         </div>
     </header>
 
     <main>
-        
+
+        <section class="admin">
+            <div class="admin-header">
+                <h1 class="admin-titulo">Productos</h1>
+                <div class="admin-usuario">
+                    <img src="../assets/img/usuario.png" alt="">
+                    <p><span data-nombres></span> <br> <span data-correos></span></p>
+                </div>
+            </div>  
+        </section>
+
         <section class="nuevo">
             <div class="nuevo__caja">
                 <h2 class="nuevo__caja__titulo">Agregar nuevo producto</h2>
@@ -57,34 +76,45 @@
                         <input name="url" id="url" class="input" type="text" placeholder="Url" required
                             data-tipo="url">
                         <label class="input-label" for="url">URL de la imagen</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div>     
 
                     <div class="fcontacto__form__input-container">
-                        <input name="categoria" id="categoria" class="input" type="text" placeholder="Categoria" required
-                            data-tipo="categoria">
-                        <label class="input-label" for="categoria">Categoría</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <select name="categoria" id="categoria" class="select" type="text" required data-tipo="categoria">
+                            <option value="" selected="selected"> - Seleccione Categoria - </option>
+                            <option value="Starwars">Starwars</option>
+                            <option value="Consolas">Consolas</option>
+                            <option value="Diversos">Diversos</option>
+                        </select>
+                        <label class="select-label" for="categoria">Categoría</label>
+                        <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div>   
 
                     <div class="fcontacto__form__input-container">
                         <input name="producto" id="producto" class="input" type="text" placeholder="Producto" required
                             data-tipo="producto">
                         <label class="input-label" for="producto">Nombre del producto</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div>   
 
                     <div class="fcontacto__form__input-container">
                         <input name="precio" id="precio" class="input" type="text" placeholder="Precio" required
                             data-tipo="precio">
                         <label class="input-label" for="precio">Precio del produtco</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo no puede quedar vacio</span>
+                    </div>  
+                    
+                    <div class="fcontacto__form__input-container">
+                        <input name="stock" id="stock" class="input" type="text" placeholder="Stock" required
+                            data-tipo="stock">
+                        <label class="input-label" for="stock">Stock del produtco</label>
+                        <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div>  
                     
                     <div class="fcontacto__form__textarea-container">
                         <textarea name="descripcion" id="descripcion" class="textarea" type="text" placeholder="Descripcion" cols="35" rows="3" required data-tipo="descripcion" minlegth="4" maxlength="500" required ></textarea>
                         <label class="textarea-label" for="descripcion">Descripción del producto</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div> 
                      
                     <button class="nuevo__form__boton"  type="submit" >Agregar Producto</button>
@@ -93,12 +123,12 @@
             </div>
         </section>
 
-        
+
 
         <section class="contacto">
             <div class="contacto--contenedor">
                 <div class="contacto__logo--caja">
-                    <a href="index.html">
+                    <a data-cierre2>
                         <div class="contacto__logo--caja__imagen"></div>
                         <div class="contacto__logo--caja__titulo">Alura</div>
                         <div class="contacto__logo--caja__titulo">Geek</div>
@@ -121,14 +151,16 @@
                         <input name="name" id="name" class="input" type="text" placeholder="Nombre" required
                             data-tipo="nombre">
                         <label class="input-label" for="name">Nombre</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>                                           
+                        <span class="input-message-error">Este campo no puede quedar vacio</span>
+                    </div>
                     <div class="fcontacto__form__textarea-container">
-                        <textarea name="mensaje" id="mensaje" class="textarea" type="text" placeholder="Mensaje" cols="35" rows="3" required data-tipo="mensaje" minlegth="4" maxlength="500" required ></textarea>
+                        <textarea name="mensaje" id="mensaje" class="textarea" type="text" placeholder="Mensaje"
+                            cols="35" rows="3" required data-tipo="mensaje" minlegth="4" maxlength="500"
+                            required></textarea>
                         <label class="textarea-label" for="mensaje">Mensaje</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>   
-                    <button class="fcontacto__form__boton"  type="submit" >Enviar mensaje</button>
+                        <span class="input-message-error">Este campo no puede quedar vacio</span>
+                    </div>
+                    <button class="fcontacto__form__boton" type="submit">Enviar mensaje</button>
                 </form>
             </div>
 
@@ -145,7 +177,16 @@
     </footer>
 
     <!-- Script del documento JavaScript -->
-    <script src="./assets/js/app.js" type="module"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../assets/js/app.js" type="module"></script>
+    <script src="../assets/js/menu.js" ></script>
+    <script src="../assets/js/cierre.js" ></script>
 
 </body>
+
 </html>

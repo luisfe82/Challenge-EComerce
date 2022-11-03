@@ -5,9 +5,6 @@
     padding: 1rem 1rem;
     background: var("--color-secundario");
 }
-.admin-header{
-    margin: 2rem 0;
-}
 .admin-box__link{
     background: var(--color-2do);
     color:var(--color-principal);
@@ -88,7 +85,7 @@
 
 @media screen and (min-width:922px){
     .admin{
-        padding: 2.5rem 9.5rem;
+        padding: 1.5rem 9.5rem;
     }
 
 }

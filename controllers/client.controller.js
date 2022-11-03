@@ -5,10 +5,10 @@ export const crearNuevaLinea = (nombre, email, id) => {
     <td class="thead-email" > ${email} </td>
     <td class="thead-opera">
         <a href="">
-            <img src="../assets/img/editar.png" alt="">
+            <img src="../assets/img/editar.png" alt="usuario a editar">
         </a>
         <a href="">
-            <img src="../assets/img/eliminar.png" alt="">
+            <img src="../assets/img/eliminar.png" alt="usuario a eliminar">
         </a>                                    
     </td>
   `;
