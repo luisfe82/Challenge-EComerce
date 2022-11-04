@@ -7,8 +7,8 @@ formulario.addEventListener("submit", (evento) => {
   const nombre = document.querySelector("[data-nombre]").value;
   const email = document.querySelector("[data-email]").value;
   const clave = CryptoJS.SHA1(document.querySelector("[data-clave]").value);
-  const encritar = new String(clave);
-  clientServices.crearCliente(nombre, email,encritar).then(() => {
+  const encriptar = new String(clave);
+  clientServices.crearCliente(nombre, email, encriptar).then(() => {
       alert("Registro realizado con exito")
       window.location.href = "../admin/usuarios.html";
     })

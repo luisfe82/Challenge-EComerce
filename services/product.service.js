@@ -34,6 +34,24 @@ const eliminarProducto = (id) => {
   });
 };
 
+const buscarProducto = (id) => {
+  return fetch(`http://localhost:3000/almacen/${id}`).then((respuesta) =>
+    respuesta.json()
+  );
+};
+
+const actualizarProducto = (id, categoria, idC, url, nombre, precio, descripcion, stock) => {
+  return fetch(`http://localhost:3000/almacen/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({id, categoria,idC, url, nombre, precio, descripcion, stock }),
+  })
+    .then((respuesta) => respuesta)
+    .catch((err) => console.log(err));
+};
+
 export const productoServices = {
   ListaProductos,
   detalleCatego,
@@ -41,4 +59,6 @@ export const productoServices = {
   BuscarUsuario,
   crearProducto,
   eliminarProducto,
+  buscarProducto,
+  actualizarProducto,
 }

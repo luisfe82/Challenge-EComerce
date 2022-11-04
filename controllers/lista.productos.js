@@ -12,7 +12,7 @@ const lineaNueva = (id, url, nombre, precio, categoria, css) => {
     <div class="${css}--body__caja__texto">${precio}</div>
     <div class="${css}--body__caja__texto">${categoria}</div>
     <div  class="${css}--body__box">
-        <span><a href="#" class="${css}--body__caja__link--editar">Editar</a></span>
+        <span><a href="../admin/editar-producto.html?id=${id}" class="${css}--body__caja__link--editar">Editar</a></span>
         <button class="${css}--body__caja__link--borrar" type="button" id="${id}">
             Eliminar
         </button> 

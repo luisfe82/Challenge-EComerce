@@ -59,7 +59,7 @@
 
         <section class="admin">
             <div class="admin-header">
-                <h1 class="admin-titulo">Productos</h1>
+                <h1 class="admin-titulo">Usuarios</h1>
                 <div class="admin-usuario">
                     <img src="../assets/img/usuario.png" alt="">
                     <p><span data-nombres></span> <br> <span data-correos></span></p>
@@ -69,53 +69,31 @@
 
         <section class="nuevo">
             <div class="nuevo__caja">
-                <h2 class="nuevo__caja__titulo">Agregar nuevo producto</h2>
-                <form class="nuevo__form" name="form"  data-form>
+                <h2 class="nuevo__caja__titulo">Editar Usuario</h2>
+                <form class="nuevo__form" name="form" data-form>
 
                     <div class="fcontacto__form__input-container">
-                        <input name="url" id="url" class="input" type="text" placeholder="Url de Imagen" required data-tipo="url" data-url>
-                        <label class="input-label" for="url">Url de Imagen</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>   
-
-                    <div class="fcontacto__form__select-container">
-                        <select name="categoria" id="categoria" class="select" type="text" required data-tipo="categoria" data-categoria>
-                            <option value="Starwars">Starwars</option>
-                            <option value="Consolas">Consolas</option>
-                            <option value="Diversos">Diversos</option>
-                        </select>
-                        <label class="select-label" for="categoria">Seleccionar Categoría</label>
+                        <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre" required
+                            data-tipo="nombreUsuario" data-nombre>
+                        <label class="input-label" for="nombre">Nombre</label>
                         <span class="input-message-error">Este campo no puede quedar vacio</span>
-                    </div>   
+                    </div>     
 
                     <div class="fcontacto__form__input-container">
-                        <input name="producto" id="producto" class="input" type="text" placeholder="Producto" required
-                            data-tipo="producto"  minlegth="4" maxlength="15" data-nombre>
-                        <label class="input-label" for="producto">Nombre del producto</label>
-                        <span class="input-message-error">Este campo no puede quedar vacio</span>
-                    </div>   
-
-                    <div class="fcontacto__form__input-container">
-                        <input name="precio" id="precio" class="input" type="text" placeholder="Precio" required
-                            data-tipo="precio" pattern="^\$(([0-9]{1,3})[\\,]([0-9]{3})([\\.][0-9]{2})|([0-9]{1,3})([\\.][0-9]{2}))" data-precio>
-                        <label class="input-label" for="precio">Precio del produtco</label>
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required
+                            data-tipo="email" data-email>
+                        <label class="input-label" for="email">Email</label>
                         <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div>  
                     
                     <div class="fcontacto__form__input-container">
-                        <input name="stock" id="stock" class="input" type="text" placeholder="Stock" required
-                            data-tipo="stock" pattern="\d{1,4}" required data-stock>
-                        <label class="input-label" for="stock">Piezas del produtco</label>
+                        <input name="password" id="password" class="input" type="password" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales."  data-tipo="password" data-clave>
+                        <label class="input-label" for="password">Contraseña</label>
                         <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div>  
-                    
-                    <div class="fcontacto__form__textarea-container">
-                        <textarea name="descripcion" id="descripcion" class="textarea" type="text" placeholder="Descripcion" cols="35" rows="3" required data-tipo="descripcion" minlegth="4" maxlength="500" required data-descripcion></textarea>
-                        <label class="textarea-label" for="descripcion">Descripción del producto</label>
-                        <span class="input-message-error">Este campo no puede quedar vacio</span>
-                    </div> 
+                                      
                      
-                    <button class="nuevo__form__boton"  type="submit" >Agregar Producto</button>
+                    <button class="nuevo__form__boton"  type="submit" >Actualizar Usuario</button>
 
                 </form>
             </div>
@@ -174,12 +152,14 @@
         </div>
     </footer>
 
-    <!-- Script del documento JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
-    <script src="../assets/js/app.js" type="module"></script>
+    <!-- Script del documento JavaScript -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>    
     <script src="../assets/js/menu.js" ></script>
     <script src="../assets/js/cierre.js" ></script>
-    <script src="../controllers/registrar.producto.js" type="module"></script>
+    <script src="../assets/js/app.js" type="module"></script>
+    <script src="../controllers/actualizar.usuario.js" type="module"></script>
+    
 
 </body>
 

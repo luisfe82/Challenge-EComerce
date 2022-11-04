@@ -6,7 +6,7 @@ const crearNuevaLinea = (nombre, email, id) => {
     <td class="thead-nombre"> ${nombre} </td>
     <td class="thead-email" > ${email} </td>
     <td class="thead-opera">
-        <a href="">
+        <a href="../admin/editar-usuario.html?id=${id}">
             <img src="../assets/img/editar.png" alt="usuario a editar">
         </a>
         <button class="thead-boton" type="button" id="${id}">
