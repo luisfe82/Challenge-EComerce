@@ -1,218 +1,218 @@
 {
-    "usuarios":[
-      {
-        "id":"",
-        "nombre":"Administrador",
-        "email":"administrador@alura.com",
-        "clave":"d033e22ae348aeb5660fc2140aec35850c4da997"
-      },
-      {
-        "id":"",
-        "nombre":"Luis Fe Ramos",
-        "email":"luisferamos@alura.com",
-        "clave":"4af11ee8d96e2a2accfeec6d4da8916b1e0b4da1"
-      }
-    ],
-    "categoria":[
-      {
-        "id":"1",
-        "titulo":"StarWars",
-        "data":"data-starwars",
-        "imagen":"starwars.png"
-      },
-      {
-        "id":"2",
-        "titulo":"Consolas",
-        "data":"data-consolas",
-        "imagen":"consolas.png"
-      },
-      {
-        "id":"3",
-        "titulo":"Diversos",
-        "data":"data-diversos",
-        "imagen":"diversos.png"
-      }
-    ],
-    "almacen": [
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b817642456b8",
-        "categoria":"StarWars",
-        "idC":"1",
-        "url":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0AoaNIe6xYQClU5HvYio21VLwShlHBMO9Iz3WTCHDlgETsweD",
-        "nombre":"Cabeza Soldado",
-        "precio":"$120.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"       
-      },    
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b827642456b8",
-        "categoria":"StarWars",
-        "idC":"1",
-        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqhd4atrCNkyoL8zTXELPIYbZ97PzVOk6NZMKZk47hPxRwyTG",
-        "nombre":"Cabeza Dark",
-        "precio":"$60.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },    
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b837642456b8",
-        "categoria":"StarWars",
-        "idC":"1",
-        "url":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-OamA5U0rHjMNDjZ5rLMEs6GNMHDa_gYlw4aBtOxSZqEF6LZg",
-        "nombre":"Juguete Jedai",
-        "precio":"$60.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },    
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b847642456b8",
-        "categoria":"StarWars",
-        "idC":"1",
-        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmxi4WTkzN5dN2kQoeOoi6AMGmjizIf8Ol-g&usqp=CAU",
-        "nombre":"Soldado Juguete",
-        "precio":"$150.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b857642456b8",
-        "categoria":"StarWars",
-        "idC":"1",
-        "url":"https://www.surmujer.cl/104668_pic/cdn-2_12cm-de-star-wars-mandalorianas-yoda-beb%C3%A9-de-la-colecci%C3%B3n.jpg",
-        "nombre":"Jedai Juguete",
-        "precio":"$250.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b867642456b8",
-        "categoria":"StarWars",
-        "idC":"1",
-        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxXefY7b-icdVogOa-3sIXJbLCIln4vKQAcw&usqp=CAU",
-        "nombre":"Dark Juguete",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b877642456b8",
-        "categoria":"Consolas",
-        "idC":"2",
-        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwuScp6OrxeLsUEw0C7AM2tQEaobNkAzaXw&usqp=CAU",
-        "nombre":"Control Xbox One",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b887642456b8",
-        "categoria":"Consolas",
-        "idC":"2",
-        "url":"https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202106/20/00194481000126____3__640x640.jpg",
-        "nombre":"Play Station",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b897642456b8",
-        "categoria":"Consolas",
-        "idC":"2",
-        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYxIMyxxYtf0erJhuYDT2gc3yO17kUBZTOCQ&usqp=CAU",
-        "nombre":"Nintendo",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b8q7642456b8",
-        "categoria":"Consolas",
-        "idC":"2",
-        "url":"https://nintendo.trilogygames.com.br/image/cache/catalog/dan-2/1643404860-494x494.jpeg",
-        "nombre":"Control Twich",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b8w7642456b8",
-        "categoria":"Consolas",
-        "idC":"2",
-        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7DdvX-bLYgFXSpBxRICYpg2PSX7lN4Q5nXZmqSG3Amb4GEcjVswu31MIX0izWGR0aSPQ&usqp=CAU",
-        "nombre":"Xbox One X",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
-        "categoria":"Consolas",
-        "idC":"2",
-        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFwOpf1Y-r-S2txsk5XyhWMjvTq8aMfvrOw&usqp=CAU",
-        "nombre":"Juego Atari",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b8r7642456b8",
-        "categoria":"Diversos",
-        "idC":"3",
-        "url":"logo-consola.png",
-        "nombre":"Logo Consola",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b8t7642456b8",
-        "categoria":"Diversos",
-        "idC":"3",
-        "url":"control.png",
-        "nombre":"Control",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b8y7642456b8",
-        "categoria":"Diversos",
-        "idC":"3",
-        "url":"juguete-sonic.png",
-        "nombre":"Juguete Sonic",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b8u7642456b8",
-        "categoria":"Diversos",
-        "idC":"3",
-        "url":"consola-vieja.png",
-        "nombre":"Consola Vieja",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b8i7642456b8",
-        "categoria":"Diversos",
-        "idC":"3",
-        "url":"jugador.png",
-        "nombre":"Jugador",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      },     
-      {
-        "id": "bd1bd72d-5293-4dd7-8746-b8o7642456b8",
-        "categoria":"Diversos",
-        "idC":"3",
-        "url":"pokemon-juguete.png",
-        "nombre":"Pokemon Juguete",
-        "precio":"$90.00",
-        "descripcion":"Juguete representativo a StarWars",
-        "stock":"10"         
-      }     
-    ]
-  }
+  "usuarios": [
+    {
+      "id": "8392xb3c-86x3-46ex-8a8x-d434f9e04d80",
+      "nombre": "Administrador",
+      "email": "administrador@alura.com",
+      "clave": "d033e22ae348aeb5660fc2140aec35850c4da997"
+    },
+    {
+      "id": "6bcc17e6-be4a-4080-a525-11bcea5c6891",
+      "nombre": "luis",
+      "email": "luis@alura.com",
+      "clave": "b584a0fb7b75204c11c78217e002a68ce6621415"
+    }
+  ],
+  "categoria": [
+    {
+      "id": "1",
+      "titulo": "StarWars",
+      "data": "data-starwars",
+      "imagen": "starwars.png"
+    },
+    {
+      "id": "2",
+      "titulo": "Consolas",
+      "data": "data-consolas",
+      "imagen": "consolas.png"
+    },
+    {
+      "id": "3",
+      "titulo": "Diversos",
+      "data": "data-diversos",
+      "imagen": "diversos.png"
+    }
+  ],
+  "almacen": [
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b817642456b8",
+      "categoria": "StarWars",
+      "idC": "1",
+      "url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0AoaNIe6xYQClU5HvYio21VLwShlHBMO9Iz3WTCHDlgETsweD",
+      "nombre": "Cabeza Soldado",
+      "precio": "$120.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b827642456b8",
+      "categoria": "StarWars",
+      "idC": "1",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqhd4atrCNkyoL8zTXELPIYbZ97PzVOk6NZMKZk47hPxRwyTG",
+      "nombre": "Cabeza Dark",
+      "precio": "$60.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b837642456b8",
+      "categoria": "StarWars",
+      "idC": "1",
+      "url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-OamA5U0rHjMNDjZ5rLMEs6GNMHDa_gYlw4aBtOxSZqEF6LZg",
+      "nombre": "Juguete Jedai",
+      "precio": "$60.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b847642456b8",
+      "categoria": "StarWars",
+      "idC": "1",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmxi4WTkzN5dN2kQoeOoi6AMGmjizIf8Ol-g&usqp=CAU",
+      "nombre": "Soldado Juguete",
+      "precio": "$150.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b857642456b8",
+      "categoria": "StarWars",
+      "idC": "1",
+      "url": "https://www.surmujer.cl/104668_pic/cdn-2_12cm-de-star-wars-mandalorianas-yoda-beb%C3%A9-de-la-colecci%C3%B3n.jpg",
+      "nombre": "Jedai Juguete",
+      "precio": "$250.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b867642456b8",
+      "categoria": "StarWars",
+      "idC": "1",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxXefY7b-icdVogOa-3sIXJbLCIln4vKQAcw&usqp=CAU",
+      "nombre": "Dark Juguete",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b877642456b8",
+      "categoria": "Consolas",
+      "idC": "2",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwuScp6OrxeLsUEw0C7AM2tQEaobNkAzaXw&usqp=CAU",
+      "nombre": "Control Xbox One",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b887642456b8",
+      "categoria": "Consolas",
+      "idC": "2",
+      "url": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202106/20/00194481000126____3__640x640.jpg",
+      "nombre": "Play Station",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b897642456b8",
+      "categoria": "Consolas",
+      "idC": "2",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYxIMyxxYtf0erJhuYDT2gc3yO17kUBZTOCQ&usqp=CAU",
+      "nombre": "Nintendo",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b8q7642456b8",
+      "categoria": "Consolas",
+      "idC": "2",
+      "url": "https://nintendo.trilogygames.com.br/image/cache/catalog/dan-2/1643404860-494x494.jpeg",
+      "nombre": "Control Twich",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b8w7642456b8",
+      "categoria": "Consolas",
+      "idC": "2",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7DdvX-bLYgFXSpBxRICYpg2PSX7lN4Q5nXZmqSG3Amb4GEcjVswu31MIX0izWGR0aSPQ&usqp=CAU",
+      "nombre": "Xbox One X",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b8e7642456b8",
+      "categoria": "Consolas",
+      "idC": "2",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFwOpf1Y-r-S2txsk5XyhWMjvTq8aMfvrOw&usqp=CAU",
+      "nombre": "Juego Atari",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b8r7642456b8",
+      "categoria": "Diversos",
+      "idC": "3",
+      "url": "logo-consola.png",
+      "nombre": "Logo Consola",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b8t7642456b8",
+      "categoria": "Diversos",
+      "idC": "3",
+      "url": "control.png",
+      "nombre": "Control",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b8y7642456b8",
+      "categoria": "Diversos",
+      "idC": "3",
+      "url": "juguete-sonic.png",
+      "nombre": "Juguete Sonic",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b8u7642456b8",
+      "categoria": "Diversos",
+      "idC": "3",
+      "url": "consola-vieja.png",
+      "nombre": "Consola Vieja",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "bd1bd72d-5293-4dd7-8746-b8i7642456b8",
+      "categoria": "Diversos",
+      "idC": "3",
+      "url": "jugador.png",
+      "nombre": "Jugador",
+      "precio": "$90.00",
+      "descripcion": "Juguete representativo a StarWars",
+      "stock": "10"
+    },
+    {
+      "id": "60fd282a-41db-4e6f-9dd5-dda98cdb46b5",
+      "categoria": "Diversos",
+      "idC": "3",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYOC_g6kgKzpSn914VAsXjtw03JgKTmBXcXA&usqp=CAU",
+      "nombre": "Control Xbox S",
+      "precio": "$800.00",
+      "descripcion": "Control Inhalambrico, con cable incluido nuevo, 1000 horas de juego, regarga rapida",
+      "stock": "1"
+    }
+  ]
+}

@@ -70,18 +70,17 @@
         <section class="nuevo">
             <div class="nuevo__caja">
                 <h2 class="nuevo__caja__titulo">Agregar nuevo producto</h2>
-                <form class="nuevo__form" name="form">
+                <form class="nuevo__form" name="form"  data-form>
 
                     <div class="fcontacto__form__input-container">
-                        <input name="url" id="url" class="input" type="text" placeholder="Url" required
-                            data-tipo="url">
-                        <label class="input-label" for="url">URL de la imagen</label>
-                        <span class="input-message-error">Este campo no puede quedar vacio</span>
-                    </div>     
+                        <input name="url" id="url" class="input" type="text" placeholder="Url de Imagen" required data-tipo="url" data-url>
+                        <label class="input-label" for="url">Url de Imagen</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>   
 
-                    <div class="fcontacto__form__input-container">
-                        <select name="categoria" id="categoria" class="select" type="text" required data-tipo="categoria">
-                            <option value="" selected="selected"> - Seleccione Categoria - </option>
+                    <div class="fcontacto__form__select-container">
+                        <select name="categoria" id="categoria" class="select" type="text" required data-tipo="categoria" data-categoria>
+                            <option value="" selected="selected">Seleccionar Categoria</option>
                             <option value="Starwars">Starwars</option>
                             <option value="Consolas">Consolas</option>
                             <option value="Diversos">Diversos</option>
@@ -92,27 +91,27 @@
 
                     <div class="fcontacto__form__input-container">
                         <input name="producto" id="producto" class="input" type="text" placeholder="Producto" required
-                            data-tipo="producto">
+                            data-tipo="producto"  minlegth="4" maxlength="15" data-nombre>
                         <label class="input-label" for="producto">Nombre del producto</label>
                         <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div>   
 
                     <div class="fcontacto__form__input-container">
                         <input name="precio" id="precio" class="input" type="text" placeholder="Precio" required
-                            data-tipo="precio">
+                            data-tipo="precio" pattern="^\$(([0-9]{1,3})[\\,]([0-9]{3})([\\.][0-9]{2})|([0-9]{1,3})([\\.][0-9]{2}))" data-precio>
                         <label class="input-label" for="precio">Precio del produtco</label>
                         <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div>  
                     
                     <div class="fcontacto__form__input-container">
                         <input name="stock" id="stock" class="input" type="text" placeholder="Stock" required
-                            data-tipo="stock">
-                        <label class="input-label" for="stock">Stock del produtco</label>
+                            data-tipo="stock" pattern="\d{1,4}" required data-stock>
+                        <label class="input-label" for="stock">Piezas del produtco</label>
                         <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div>  
                     
                     <div class="fcontacto__form__textarea-container">
-                        <textarea name="descripcion" id="descripcion" class="textarea" type="text" placeholder="Descripcion" cols="35" rows="3" required data-tipo="descripcion" minlegth="4" maxlength="500" required ></textarea>
+                        <textarea name="descripcion" id="descripcion" class="textarea" type="text" placeholder="Descripcion" cols="35" rows="3" required data-tipo="descripcion" minlegth="4" maxlength="500" required data-descripcion></textarea>
                         <label class="textarea-label" for="descripcion">Descripción del producto</label>
                         <span class="input-message-error">Este campo no puede quedar vacio</span>
                     </div> 
@@ -177,15 +176,11 @@
     </footer>
 
     <!-- Script del documento JavaScript -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
-      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
     <script src="../assets/js/app.js" type="module"></script>
     <script src="../assets/js/menu.js" ></script>
     <script src="../assets/js/cierre.js" ></script>
+    <script src="../controllers/registrar.producto.js" type="module"></script>
 
 </body>
 

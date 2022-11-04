@@ -18,9 +18,27 @@ const detalleProdu = async (id) => {
   return await respuesta.json();
 };
 
+const crearProducto = (categoria, idC, url, nombre, precio, descripcion, stock) => {
+  return fetch("http://localhost:3000/almacen", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({id: uuid.v4(), categoria, idC, url, nombre, precio, descripcion, stock }),
+  });
+};
+
+const eliminarProducto = (id) => {
+  return fetch(`http://localhost:3000/almacen/${id}`, {
+    method: "DELETE",
+  });
+};
+
 export const productoServices = {
   ListaProductos,
   detalleCatego,
   detalleProdu,
   BuscarUsuario,
+  crearProducto,
+  eliminarProducto,
 }

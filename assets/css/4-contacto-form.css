@@ -59,7 +59,7 @@
     font-size: 14px;
     line-height: 16px;
 }
-/*?-----------------------------------------------------------  */
+/*?------------------------Input-----------------------------------  */
 .fcontacto__form__input-container {
     font-weight: 400;
     position: relative;
@@ -103,7 +103,7 @@
     transition: all 0.25s;
 }
 
-/*?-----------------------------------------------------------  */
+/*?-----------------------TextArea------------------------------------  */
 .fcontacto__form__textarea-container {
     font-weight: 400;
     position: relative;
@@ -146,6 +146,49 @@
     top: 0.25rem;
     transition: all 0.25s;
 }
+/*?---------------------Select--------------------------------------  */
+.fcontacto__form__select-container {
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;    
+}
+
+.select {
+    box-sizing: border-box;
+    border:none;
+    padding: 1.375rem 0.5rem 0.5rem;
+    width: 100%;
+    resize: none;
+}
+
+.select::placeholder {
+    visibility: hidden;
+    color: #2A7AE4;
+}
+
+.select:focus {
+    outline: none;
+}
+
+.select-label {
+    color: #2A7AE4;
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: 18px;
+    transition: all 0.25s;
+}
+
+.select:not(:placeholder-shown)+.select-label,
+.select:focus+.select-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+}
 
 /*?---------------------------Mensaje Error ------------------ */
 .input-container--invalid {
@@ -153,13 +196,15 @@
   }
   
   .input-container--invalid .input,
-  .input-container--invalid .textarea{
+  .input-container--invalid .textarea,
+  .input-container--invalid .select{
     border: 1px solid red;
     border-radius: 7px;
   }
   
   .input-container--invalid .input-label,
-  .input-container--invalid .textarea-label {
+  .input-container--invalid .textarea-label,
+  .input-container--invalid .select-label {
     color: red;
   }
   
