@@ -3,12 +3,23 @@ const cierreSession2 = document.querySelector("[data-cierre2]");
 const cierreSession3 = document.querySelector("[data-cierre3]");
 
 function cerrar() {
-    var respuesta = confirm("Estas Seguro que deseas salir del administrador");
-    if (respuesta) {
-        localStorage.removeItem('usuario');
-        window.location.href = "../../index.html";
-    }
-
+    Swal.fire({
+        title: 'AluraGeek',
+        html: '<span class="text">¿ Estas Seguro que deseas Salir? </span>',
+        imageUrl: '../assets/img/svg/question-svgrepo-com.svg',
+        imageWidth: 100,
+        imageHeight: 100,
+        imageAlt: 'Nube con un Rayo',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Aceptar',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          localStorage.removeItem('usuario');
+          window.location.href = "../../index.html";
+        }
+      })
 }
 
 cierreSession.addEventListener("click", cerrar);

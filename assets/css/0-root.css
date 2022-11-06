@@ -34,3 +34,7 @@ a{
     text-decoration: none;
     color: var(--color-de-link);
 }
+
+.text{
+    color: var(--color-2do);
+}

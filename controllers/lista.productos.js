@@ -22,11 +22,35 @@ const lineaNueva = (id, url, nombre, precio, categoria, css) => {
     const btn = linea.querySelector("button");
     btn.addEventListener("click", () => {
         const id = btn.id;
-        productoServices.eliminarProducto(id)
-            .then((respuesta) => {
-                alert("Eliminado correctamente");
-            })
-            .catch(() => alert("Ocurrió un error"));
+        Swal.fire({
+            title: 'AluraGeek',
+            html: '<span class="text">¿ Estas Seguro que deseas Eliminarlo? </span>',
+            imageUrl: '../assets/img/svg/exclamation-mark-svgrepo-com.svg',
+            imageWidth: 100,
+            imageHeight: 100,
+            imageAlt: 'Nube con un Rayo',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Borrarlo',
+          }).then((result) => {
+            if (result.isConfirmed) {
+                productoServices.eliminarProducto(id)
+                .then((respuesta) => {
+                    Swal.fire({
+                        title: 'AluraGeek',
+                        html: `<h2>Completado Exitosamente</h3>`,
+                        imageUrl: '../assets/img/svg/letter-v-svgrepo-com.svg',
+                        imageWidth: 100,
+                        imageHeight: 100,
+                        imageAlt: 'Nube con un Rayo',
+                        showConfirmButton: false,
+                        timer: 10000
+                      })
+                })
+                .catch(() => alert("Ocurrió un error"));
+            }
+          })    
     });
     return linea;
 };

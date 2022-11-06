@@ -6,9 +6,9 @@ formulario.addEventListener("submit", (evento) => {
   evento.preventDefault();
 
   const NumCategoria = {
-    "StartWars":"1",
-    "Consolas":"2",
-    "Diversos":"3"
+    "StartWars": "1",
+    "Consolas": "2",
+    "Diversos": "3"
   }
 
   const categoria = document.querySelector("[data-categoria]").value;
@@ -19,9 +19,35 @@ formulario.addEventListener("submit", (evento) => {
   const stock = document.querySelector("[data-stock]").value;
   let idC = NumCategoria[categoria];
 
-  productoServices.crearProducto(categoria,idC, url, nombre, precio, descripcion, stock).then(() => {
-    alert("Registro realizado con exito")
-    window.location.href = "productos.html";
+  Swal.fire({
+    title: 'AluraGeek',
+    html: '<span class="text">¿ Todo esta correto? </span>',
+    imageUrl: '../assets/img/svg/notepad-svgrepo-com.svg',
+    imageWidth: 100,
+    imageHeight: 100,
+    imageAlt: 'Nube con un Rayo',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Guardar',
+  }).then((result) => {
+    if (result.isConfirmed) {      
+      productoServices.crearProducto(categoria, idC, url, nombre, precio, descripcion, stock)
+      .then(() => {        
+        Swal.fire({
+          title: 'AluraGeek',
+          html: `<h2>Completado Exitosamente</h3>`,
+          imageUrl: '../assets/img/svg/letter-v-svgrepo-com.svg',
+          imageWidth: 100,
+          imageHeight: 100,
+          imageAlt: 'Nube con un Rayo',
+          showConfirmButton: false,
+          timer: 10000
+        })      
+        document.location.href = "productos.html";
+      }).catch((err) => console.log(err));
+    }
   })
-    .catch((err) => console.log(err));
+
+
 });

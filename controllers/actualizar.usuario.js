@@ -30,8 +30,36 @@ formulario.addEventListener("submit", (evento) => {
   const email = document.querySelector("[data-email]").value;
   const clave = CryptoJS.SHA1(document.querySelector("[data-clave]").value);
   const encriptar = new String(clave);
-  clientServices.actualizarCliente(id, nombre, email, encriptar).then(() => {
-    alert("Actualizado correctamente")
-    // window.location.href = "/screens/edicion_concluida.html";
-  });
+
+  Swal.fire({
+    title: 'AluraGeek',
+    html: '<span class="text">¿ Todo esta correto? </span>',
+    imageUrl: '../assets/img/svg/notepad-svgrepo-com.svg',
+    imageWidth: 100,
+    imageHeight: 100,
+    imageAlt: 'Nube con un Rayo',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Actualizar',
+  }).then((result) => {
+    if (result.isConfirmed) {  
+      clientServices.actualizarCliente(id, nombre, email, encriptar).then(() => {
+        Swal.fire({
+          title: 'AluraGeek',
+          html: `<h2>Completado Exitosamente</h3>`,
+          imageUrl: '../assets/img/svg/letter-v-svgrepo-com.svg',
+          imageWidth: 100,
+          imageHeight: 100,
+          imageAlt: 'Nube con un Rayo',
+          showConfirmButton: false,
+          timer: 10000
+        })      
+        document.location.href = "usuarios.html";
+      });
+    }
+  })
+
+
+  
 });
