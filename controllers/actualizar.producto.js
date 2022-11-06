@@ -73,7 +73,7 @@ formulario.addEventListener("submit", (evento) => {
           showConfirmButton: false,
           timer: 10000
         })      
-        document.location.href = "productos.html";
+        window.location.href = "productos.html";
       });
     }
   })
