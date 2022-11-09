@@ -1,29 +1,29 @@
 import { productoServices } from "../services/product.service.js";
-
+import { lineaNuevaProducto } from "./producto.controller.js";
 
 const obtenerInformacion = () => {
   const identificador = new URL(window.location);
   const id = identificador.searchParams.get("id");
 
+  const palabra = document.querySelector("[data-palabra]");
+  palabra.innerText = id;
+
   if (id === null) {
     window.location.href = "/screens/error.html";
   }
 
-  const categoria = document.querySelector("[data-categoria]");
-  const url = document.querySelector("[data-url]");
-  const nombre = document.querySelector("[data-nombre]");
-  const precio = document.querySelector("[data-precio]");
-  const descripcion = document.querySelector("[data-descripcion]");
-  const stock = document.querySelector("[data-stock]");
+  const contenido = document.querySelector("[data-contenido]");
 
-  productoServices.buscarProducto(id).then((almacen) => {
-    // categoria.value = almacen.categoria;
-    url.value = almacen.url;
-    nombre.value = almacen.nombre;
-    precio.value = almacen.precio;
-    descripcion.value = almacen.descripcion;
-    stock.value = almacen.stock;
-  });
+  productoServices.ListaProductos().then((data) => {
+    data.forEach((almacen) => {
+      const regex = new RegExp(`^${id}`, "gi");
+      if (almacen.nombre.match(regex)) {
+        const nuevaLinea = lineaNuevaProducto(almacen.id, almacen.url, almacen.nombre, almacen.precio, "content");
+        contenido.appendChild(nuevaLinea);
+      }
+    });
+  }).catch(() => alert("hubo un error"));
+
 };
 
 obtenerInformacion();

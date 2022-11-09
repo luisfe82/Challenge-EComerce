@@ -36,8 +36,8 @@
             </div>
             <div class="cabecera--caja" data-buscador>
                 <div class="cabecera__buscador--caja">
-                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador" placeholder="¿Qué deseas buscar?"> 
-                    <div class="cabecera__buscador--caja__label" for="buscador" data-lupa></div>
+                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador" placeholder="¿Qué deseas buscar?" data-input> 
+                    <a class="cabecera__buscador--caja__label"  data-lupa></a>
                 </div>
             </div>   
             <button class="cabecera__boton--login" ><a href="login.html"> Login</a></button>                    
@@ -56,7 +56,7 @@
                     <h1 class="admin-titulo">Resultados...</h1>
                 </div>                
                 <div class="admin-usuario">                    
-                    <h4>Palabra Buscada : </h4>&nbsp;<p> Consola</p>
+                    <h4>Palabra Buscada : </h4>&nbsp;<p data-palabra> Consola</p>
                 </div>                
             </div>
 
@@ -121,6 +121,7 @@
     <!-- Script del documento JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
     <script src="./assets/js/app.js" type="module"></script>
+    <script src="./controllers/search.js" type="module"></script>
     <script src="./assets/js/destruye.js" ></script>
     <script src="./assets/js/buscador-lista.js" ></script>     
 
