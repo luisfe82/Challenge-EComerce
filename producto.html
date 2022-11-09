@@ -34,15 +34,17 @@
                     <div class="cabecera__logo--caja__titulo">Geek</div>
                 </a>
             </div>
-            <div class="cabecera--caja">
+            <div class="cabecera--caja" data-buscador>
                 <div class="cabecera__buscador--caja">
-                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador"
-                        placeholder="¿Qué deseas buscar?">
-                    <div class="cabecera__buscador--caja__label" for="buscador"></div>
+                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador" placeholder="¿Qué deseas buscar?" data-input> 
+                    <a class="cabecera__buscador--caja__label"  data-lupa></a>
                 </div>
+            </div>   
+            <button class="cabecera__boton--login" ><a href="login.html"> Login</a></button>                    
+            <div class="cabecera__boton--buscar" data-botonBuscar>
+                <img class="" src="./assets/img/lupa.png" alt="lupa" data-imglupa>
+                <img class="visible-lupa" src="./assets/img/equis.png" alt="equis" data-imgequis>
             </div>
-            <button class="cabecera__boton--login"><a href="login.html"> Login</a></button>
-            <div class="cabecera__boton--buscar"></div>
         </div>
     </header>
 
@@ -104,8 +106,10 @@
     </footer>
 
     <!-- Script del documento JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
     <script src="./assets/js/app.js" type="module"></script>
     <script src="./assets/js/destruye.js"></script>
+    <script src="./assets/js/buscador-lista.js" ></script>
     <script src="./controllers/detalle.producto.js" type="module"></script>
 
 </body>

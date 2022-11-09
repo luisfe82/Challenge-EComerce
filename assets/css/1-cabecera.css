@@ -11,9 +11,18 @@
     align-items: center;
 }
 .cabecera--caja{
-    display: none;
     padding-left: 2rem;
     width:100%;    
+    display: none;
+}
+.visible{
+    top: 4.5rem;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: var(--color-1er-fondo);
+    justify-content: center;
 }
 .cabecera__logo--caja a{
     display: flex;
@@ -38,6 +47,9 @@
     background: var(--color-1er-fondo);    
     height: 40px;
     width: 272px;    
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cabecera__buscador--caja__input{
@@ -70,8 +82,11 @@
     width: 17px;
     height: 17px;
 }
+.visible-lupa{
+    display: none;
+}
 .cabecera__boton--buscar{
-    background: url("../img/lupa.png") no-repeat center / cover;
+    /* background: url("../img/lupa.png") no-repeat center / cover; */
     width: 17px;
     height: 17px;
 }

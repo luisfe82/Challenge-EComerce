@@ -15,10 +15,11 @@
     <!-- Referencia de la hoja de estilo de Css -->
     <link rel="stylesheet" href="./assets/css/0-root.css">
     <link rel="stylesheet" href="./assets/css/1-cabecera.css">
-    <link rel="stylesheet" href="./assets/css/2.1-presenta.css">
+    <link rel="stylesheet" href="./assets/css/3-content.css">
     <link rel="stylesheet" href="./assets/css/4-contacto-form.css">
     <link rel="stylesheet" href="./assets/css/5-pie.css">
-    <link rel="stylesheet" href="./assets/css/9-categoria.css">
+    <link rel="stylesheet" href="./assets/css/11-admin.css">
+
 
 </head>
 <body>
@@ -35,8 +36,8 @@
             </div>
             <div class="cabecera--caja" data-buscador>
                 <div class="cabecera__buscador--caja">
-                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador" placeholder="¿Qué deseas buscar?" data-input> 
-                    <a class="cabecera__buscador--caja__label"  data-lupa></a>
+                    <input class="cabecera__buscador--caja__input" type="text" name="buscador" id="buscador" placeholder="¿Qué deseas buscar?"> 
+                    <div class="cabecera__buscador--caja__label" for="buscador" data-lupa></div>
                 </div>
             </div>   
             <button class="cabecera__boton--login" ><a href="login.html"> Login</a></button>                    
@@ -49,22 +50,24 @@
 
     <main>
 
-        <section class="presentaCat" data-presenta>
-            <div class="presentaCat--caja">
-                <h1 class="presentaCat--caja__titulo" data-titulo></h1>
+        <section class="admin">
+            <div class="admin-header">
+                <div class="admin-box">
+                    <h1 class="admin-titulo">Resultados...</h1>
+                </div>                
+                <div class="admin-usuario">                    
+                    <h4>Palabra Buscada : </h4>&nbsp;<p> Consola</p>
+                </div>                
             </div>
-        </section>
 
-        <section class="categoria">
-            <div class="categoria--body" data-contenido>
-
+            <div class="content--body" data-contenido>
+    
                 <!-- .... -->
                 
             </div>
+            
         </section>
-
-
-
+   
 
         <section class="contacto">
             <div class="contacto--contenedor">
@@ -117,11 +120,9 @@
 
     <!-- Script del documento JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
-    <script src="./assets/js/app.js" type="module"></script>   
-    <script src="./assets/js/destruye.js"></script>
-    <script src="./assets/js/buscador-lista.js" ></script>
-    <script src="./controllers/detalle.categoria.js" type="module"></script>   
-
+    <script src="./assets/js/app.js" type="module"></script>
+    <script src="./assets/js/destruye.js" ></script>
+    <script src="./assets/js/buscador-lista.js" ></script>     
 
 </body>
 </html>
