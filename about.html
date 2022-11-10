@@ -15,10 +15,12 @@
     <!-- Referencia de la hoja de estilo de Css -->
     <link rel="stylesheet" href="./assets/css/0-root.css">
     <link rel="stylesheet" href="./assets/css/1-cabecera.css">
-    <link rel="stylesheet" href="./assets/css/2-presenta.css">
     <link rel="stylesheet" href="./assets/css/3-content.css">
     <link rel="stylesheet" href="./assets/css/4-contacto-form.css">
     <link rel="stylesheet" href="./assets/css/5-pie.css">
+    <link rel="stylesheet" href="./assets/css/11-admin.css">
+    <link rel="stylesheet" href="./assets/css/13-nosotros.css">
+
 
 </head>
 <body>
@@ -49,49 +51,31 @@
 
     <main>
 
-        <section class="presenta">
-            <div class="presenta--caja">
-                <h1 class="presenta--caja__titulo">Febrero Promocional</h1>
-                <h2 class="presenta--caja__texto">Productos selecionados con 33% de descuento</h2>
-                <a href="./categoria.html?id=2"><button class="presenta--caja__boton">Ver Consolas</button></a>
+        <section class="admin">
+            <div class="admin-header">
+                <div class="admin-box">
+                    <h1 class="admin-titulo">Acerca de Nosotros...</h1>
+                </div>                
             </div>
-        </section>
 
-        <section class="content">
-            <div class="content--cabecera">
-                <h2 class="content--cabecera__titulo">Star Wars</h2>
-                <a  class="content--cabecera__link" href="./categoria.html?id=1"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
-            </div>
-            <div class="content--body" data-starwars>
-
-                <!-- .... -->
+            <div class="content--body" data-contenido>
+    
+                <div class="nosotros">
+                    <div class="nosotros-texto">
+                        <p>&nbsp;&nbsp; Somos una Empresa 100% mexicana líder en la industria, fundada en 2020 por fabricantes y jugueteros de tradición que incursiona en el retail en 2021 con la apertura de 5 Tiendas.</p>
+                        <p>&nbsp;&nbsp;AluraGreek se ha dedicado completamente al desarrollo, fabricación, distribución y venta de juguetes en México, preocupándose por mantener la tradición y seguir llevando la magia del juego a todos los hogares.</p>
+                        <p>&nbsp;&nbsp;Actualmente contamos con 32 Tiendas a nivel nacional que se distinguen por ofrecer el mejor surtido, servicio y experiencia de compra a todos nuestros clientes.</p>
+                    </div>
+                    <div class="nosotros-imagen">
+                        <img src="/assets/img/productos.png" alt="productos">
+                    </div>
+                </div>
+                
                 
             </div>
+            
         </section>
-
-        <section class="content">
-            <div class="content--cabecera">
-                <h2 class="content--cabecera__titulo">Consolas</h2>
-                <a  class="content--cabecera__link" href="./categoria.html?id=2"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
-            </div>
-            <div class="content--body" data-consolas>
-
-                <!-- .... -->
-                
-            </div>
-        </section>
-
-        <section class="content">
-            <div class="content--cabecera">
-                <h2 class="content--cabecera__titulo">Diversos</h2>
-                <a  class="content--cabecera__link" href="./categoria.html?id=3"> Ver todo &nbsp;<img class="content--cabecera__link--imagen" src="./assets/img/flecha-derecha.png" alt=""></a>
-            </div>
-            <div class="content--body" data-diversos>
-
-                <!-- .... -->  
-
-            </div>
-        </section>
+   
 
         <section class="contacto">
             <div class="contacto--contenedor">
@@ -105,10 +89,10 @@
                 <div class="contacto__link--caja">
                     <a href="about.html" class="contacto__link--caja__link" >Quienes somos</a>
                     <a href="avisoprivacidad.html" class="contacto__link--caja__link" >Política de privacidad</a>
-                    <a href="#" class="contacto__link--caja__link" >Programa de fidelidad</a>
-                    <a href="#" class="contacto__link--caja__link" >Nuestras tiendas</a>
-                    <a href="#" class="contacto__link--caja__link" >Quiero ser franquiciado</a>
-                    <a href="#" class="contacto__link--caja__link" >Anúncie aquí</a>
+                    <a href="#" class="contacto__link--caja__link" href="">Programa de fidelidad</a>
+                    <a href="#" class="contacto__link--caja__link" href="">Nuestras tiendas</a>
+                    <a href="#" class="contacto__link--caja__link" href="">Quiero ser franquiciado</a>
+                    <a href="#" class="contacto__link--caja__link" href="">Anúncie aquí</a>
                 </div>
             </div>
 
@@ -146,10 +130,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
     <script src="./assets/js/app.js" type="module"></script>
     <script src="./assets/js/destruye.js" ></script>
-    <script src="./assets/js/buscador-lista.js" ></script>
-    <script src="./controllers/starwars.js" type="module"></script>
-    <script src="./controllers/consolas.js" type="module"></script>
-    <script src="./controllers/diversos.js" type="module"></script>       
+    <script src="./assets/js/buscador-lista.js" ></script>     
 
 </body>
 </html>

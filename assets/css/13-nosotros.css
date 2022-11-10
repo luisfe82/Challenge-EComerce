@@ -1,0 +1,30 @@
+.nosotros{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.nosotros-texto{
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.nosotros-imagen{
+    border-radius: 100%;
+    background: var(--color-2do);
+    width: 284px;
+    height: 240px;
+    display: flex;
+    box-shadow: 14px -6px 0px #c4c1ff;
+}
+
+@media screen and (min-width:768px){
+    .nosotros{
+        flex-wrap:nowrap;
+    }
+}
+
