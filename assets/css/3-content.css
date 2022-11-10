@@ -74,6 +74,29 @@
 .content--body__box{
     margin:1rem 0;
 }
+
+.content--noresult{
+    background: var(--color-2do-fondo);
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content--noresult__caja{
+    padding: 1rem;
+    background: var(--color-3er-fondo);
+    text-align: center;
+    box-shadow: 6px 7px 4px #c2c2c0;
+    width: 78%;
+}
+
+.content--noresult__titulo{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
 @media screen and (min-width:768px){
     .content{
         padding: 2rem;
@@ -83,6 +106,9 @@
     }
     .content--body__caja__imagen img{
         width: 100%;
+    }
+    .content--noresult__caja{
+        width: 80%;
     }
 }
 @media screen and (min-width:992px){
