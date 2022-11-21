@@ -232,23 +232,13 @@
     },
     {
       "id": "ee8217aa-d359-423a-8726-52acb834632a",
-      "categoria": "StarWars",
-      "idC": "1",
+      "categoria": "Diversos",
+      "idC": "3",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ypMs-QDRyI7yx0By33zSHoFoQz4FkO_8v9RiieygSWLFfeF1355rwIUeb7aIaGa0jvo&usqp=CAU",
-      "nombre": "Consola 1980",
+      "nombre": "Consola Vieja",
       "precio": "$23.32",
       "descripcion": "Consola 1980",
       "stock": "4"
-    },
-    {
-      "id": "2da3b2fc-886d-4849-a543-6dcf6f04c12e",
-      "categoria": "Consolas",
-      "idC": "2",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKntp_ZM__siZTBPhXUU46MxZOe7ctDkcr_Q&usqp=CAU",
-      "nombre": "sdfdsfd",
-      "precio": "$45.00",
-      "descripcion": "dsfdsfdsf",
-      "stock": "5"
     }
   ]
 }

@@ -18,18 +18,20 @@ const detalleProdu = async (id) => {
   return await respuesta.json();
 };
 
-const crearProducto = (categoria, idC, url, nombre, precio, descripcion, stock) => {
-  return fetch("http://localhost:3000/almacen", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({id: uuid.v4(), categoria, idC, url, nombre, precio, descripcion, stock }),
-  });
+const crearProducto = async(categoria, idC, url, nombre, precio, descripcion, stock) => {
+ try {
+    return await fetch("http://localhost:3000/almacen", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({id: uuid.v4(), categoria, idC, url, nombre, precio, descripcion, stock }),
+    });
+ } catch (error) {return console.log(error);}
 };
 
-function eliminarProducto(id) {
-  return fetch(`http://localhost:3000/almacen/${id}`, {
+const eliminarProducto = async (id) => {
+  return await fetch(`http://localhost:3000/almacen/${id}`, {
     method: "DELETE",
   });
 }

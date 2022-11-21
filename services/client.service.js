@@ -2,7 +2,7 @@
 // const listaClientes = () => fetch("http://localhost:3000/usuarios").then((respuesta) => respuesta.json());
 const listaClientes = async () => { 
     const respuesta =  await fetch("http://localhost:3000/usuarios");
-    return respuesta.json();
+    return await respuesta.json();
   }
 
 // Codigo antes de convertirlo en funcion asincrona
