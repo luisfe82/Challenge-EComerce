@@ -1,5 +1,6 @@
 const ListaProductos = async () => {
-  const respuesta = await fetch("http://localhost:3000/almacen");
+  //const respuesta = await fetch("http://localhost:3000/almacen");
+  const respuesta = await fetch("https://apimocha.com/almacen");
   return await respuesta.json();
 }
 
